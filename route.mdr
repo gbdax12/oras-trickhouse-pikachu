@@ -43,7 +43,6 @@ Happy running!
 :::
 
 
-<<<<<<< HEAD
 
 :::tracker{species="Pikachu" generation=6 baseStats="[[35, 55, 40, 50, 50, 90]]"}
 20: 
@@ -61,18 +60,6 @@ Happy running!
 :::
 
 
-=======
-:::variable{name="showMaps" type="boolean" defaultValue=0 theme=success title="Do you want additional maps to help you with optionals/spinners and movement?"}
-Maps are labeled with white arrows for movement and red letters for trainers:
-  - O: Optional fight. These trainers do not spin so you just need to walk around them.
-  - F: Trainer fight. These are trainers you are fighting as a part of the route.
-  - S: Spinner trainer. These trainers spin in place so pass only when they are not looking.
-  - W: Walker trainer. These trainers move/walk so be careful of their movement.
-
-Thanks [fortunatenaruto](https://www.twitch.tv/fortunatenaruto) for compiling the maps.
-:::
-
->>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
 Choose May and give her a single character name ("!" is the fastest).
 
 Open the options and set:
@@ -453,23 +440,16 @@ Head to the museum.
 > - Great Ball
 > - PP Up
 > #### Buy (Top)
-<<<<<<< HEAD
 > - 2 X Speed
 > - 1 X Defense (vv)
 > - 3 X Sp. Def (>^)
 > - 13 X Sp. Attack (^)
-=======
-> - 7 X Speed
-> - 4 X Attack (v)
-> - 4 X Sp. Attack (>^^)
->>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
 > #### Buy (Bottom)
 > - 6 Super Repels (^^)
 
 
 Head north. Get Cosplay Pickachu
 
-<<<<<<< HEAD
 
 Reset if defense # / 19- / 11- or less than 24 @ level 20 (trapinch bulldoze range)
 Reset if sp defense 15- / 4- / x or less than 25 @ level 20 (Flannery slugma range)
@@ -481,13 +461,6 @@ After getting Cosplay Pikachu
 
 
 :::::trainer[Poké Fan Isabel]
-=======
-:::if{source="Mudkip" condition="$showMaps"}
-![map13](map13.png)
-:::
-
-:::::trainer[Poké Fan Isabel]{info="These Pokémon cannot damage you." infoColor=gray}
->>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
   :::pokemon[Plusle]
     - Echoed Voice x2 / x3
   :::
@@ -521,24 +494,9 @@ Optional: Pick up extra Full Heal
     :::if{source="Mudkip" condition="$showMaps"}
       - If burned, Super Potion after set-up (you can't/don't have to heal burn, just roll with it)
     - Echoed Voice x2
-<<<<<<< HEAD
 
     ::damage[Slugma's Incinerate]{source="Pikachu" offensive=false movePower=60 special=true level=20 evs=0 opponentLevel=18 stab=true opponentStat=34}
     ::damage[Slugma's Rock Throw]{source="Pikachu" offensive=false movePower=50 special=false level=20 evs=0 opponentLevel=18 stab=true opponentStat=23}
-=======
-    :::if{source="Mudkip" condition="$safeRoute"}
-      ::damage[Slugma's Incinerate]{source="Mudkip" evolution=1 offensive=false movePower=60 special=true level=18 evs=0 opponentLevel=18 stab=true opponentStat=34 effectiveness=0.5}
-    :::
-    :::if{source="Mudkip" condition="!$safeRoute"}
-      ::damage[Slugma's Incinerate]{source="Mudkip" evolution=1 offensive=false movePower=60 special=true level=17 evs=0 opponentLevel=18 stab=true opponentStat=34 effectiveness=0.5}
-    :::
-  :::::
-  :::::pokemon[Grovyle]
-    - Echoed Voice (x2)
-    ::damage[+3 Echoed Voice vs Grovyle]{source="Mudkip" evolution=1 movePower=120 special=true combatStages=3 level=18 evs=1 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
-
-    ::damage[Grovyle's Quick Attack]{source="Mudkip" evolution=1 offensive=false movePower=40 level=18 opponentLevel=20 opponentStat=35}
->>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
   :::::
   :::::pokemon[Wailmer]
     - Echoed Voice
@@ -554,16 +512,7 @@ Optional: Pick up extra Full Heal
 
 Pickup Revive and Leppa Berry
 
-<<<<<<< HEAD
 Drop Repel and get+register the Mach Bike.
-=======
-Drop Repel and get the Mach Bike.
-:::if{source="Mudkip" condition="$showMaps"}
-Mauville Map
-![map14](map14.png)
-:::
-
->>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
 
 
 Head north to the gym.
@@ -845,15 +794,6 @@ Exit the gym and head north. At the rocks:
 - Use a Super Repel (use 4, cancel after Poké Maniac Steve fight before meteor falls).
 - Teach Rock Smash over Water Gun (slot 3).
 
-<<<<<<< HEAD
-=======
-:::if{source="Mudkip" condition="$showMaps"}
-![map16](map16.png)
-:::
-
-![Route 113 movement](route-113-movement-1.gif)
-
->>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
 :info[**Free heal**]{color=pink}
 
 :::if{source="Mudkip" condition="$showMaps"}
