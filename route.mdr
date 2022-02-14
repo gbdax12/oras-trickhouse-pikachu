@@ -1,0 +1,1137 @@
+
+:::tracker{species="Mudkip" generation=6 baseStats="[[50, 70, 50, 50, 50, 40], [70, 85, 70, 60, 70, 50], [100, 110, 90, 85, 90, 60]]"}
+5: 
+  5 ->	  0,    0,    0,    0,    0,    0 
+  6 ->	  0,    1,    0,    0,    0,    1   #	Poochyena (1 Atk), Treecko (1 Spd)
+  7 ->	  0,    1,    0,    0,    0,    2   # Zigzagoon (1 Spd)
+  8 ->	  0,    2,    0,    0,    0,    2   # Poochyena (1 Atk)
+  9 ->	  0,    2,    1,    0,    0,    2   # Geodude (1 Def)
+  10 ->	  0,    2,    2,    0,    0,    2   # Geodude (1 Def)
+  11 ->	  0,    2,    3,    0,    0,    2   # Nosepass (1 Def)
+  12 ->   0,    2,    5,    0,    0,    2   # Geodude (1 Def), Geodude (1 Def)
+  13 ->   0,    3,    5,    0,    0,    3   # Poochyena (1 Atk)
+  14 ->   0,    4,    5,    0,    0,    3   # Meditite (1 Spd), Machop (1 Atk)
+  15 ->   0,    6,    5,    0,    0,    4   # Meditite (1 Spd), Machop (1 Atk), Machop (1 Atk)
+  16 ->   1,    7,    5,    0,    0,    5   # Makuhita (1 HP), Carvanha (1 Atk), Zubat (1 Spd)
+  17 ->   1,    8,    5,    0,    0,    6   # Carvanha (1 Atk), Plusle (1 Spd)
+  18 ->   1,    8,    5,    1,    0,    7   # Minun (1 Spd), Slugma (1 Sp.Atk)
+  19 ->   1,    8,    5,    1,    0,    9   # Grovyle (2 Spd)
+  20 ->   2,    8,    5,    3,    0,    11  # Wailmer (1 HP), Ralts (1 Sp.Atk), Magnemite (1 Sp.Atk), Electrike (1 Spd), Electrike (1 Spd)
+  21 ->   2,    8,    5,    6,    0,    13  # Voltorb (1 Spd), Voltorb (1 Spd), Magnemite (1 Sp.Atk), Magneton (2 Sp.Atk)
+  22 ->   2,    8,    5,    6,    0,    15  # Voltorb (1 Spd), Electrike (1 Spd)
+  23 ->   3,    10,   6,    6,    0,    16  # Bagon (1 Atk), Makuhita (1 HP), Trapinch (1 Atk), Electrike (1 Spd), Aron (1 Def)
+  24 ->   4,    13,   6,    6,    0,    16  # Grimer (1 HP), Mightyena (2 Atk), Carvanha (1 Atk)
+  25 ->   6,    17,   6,    6,    0,    16  # Poochyena (1 Atk), Grimer (1 HP), Grimer (1 HP), Carvanha (1 Atk), Mightyena (2 Atk)
+  26 ->   6,    19,   6,    6,    0,    18  # Sharpedo (2 Atk), Golbat (2 Spd)
+  27 ->   6,    19,   8,    9,    0,    18  # Numel (1 Sp.Atk), Slugma (1 Sp.Atk), Numel (1 Sp.Atk), Torkoal (2 Def)
+  28 ->   7,    19,   8,    9,    0,    21  # Delcatty (1 HP, 1 Spd), Linoone (2 Spd)
+  29 ->   10,   21,   8,    9,    0,    21  # Zangoose (2 Atk), Slaking (3 HP)
+  30 ->   13,   21,   8,    9,    0,    23  # Vigoroth (2 Spd), Slaking (3 HP)
+:::
+
+:::card{theme=info}
+The route is for completing the Trick House. The run should be under/around 2 hours. The run is a nice short(er) run for Alpha Sapphire.
+Please set the two options below before starting! Default is to set "No" to both, which would result in the recommneded setting if you've run ORAS before.
+
+For beginners, set both options below to "Yes." It is more than OK to run non-ideal mudkips if using the safe route option!
+Happy running!
+:::
+
+
+:::variable{name="safeRoute" type="boolean" defaultValue=0 theme=error title="Do you want a safer route?"}
+ The safer route fights one more optional so you have "safer" Hideki and Museum fights.
+:::
+
+
+<<<<<<< HEAD
+
+:::tracker{species="Pikachu" generation=6 baseStats="[[35, 55, 40, 50, 50, 90]]"}
+20: 
+  20 ->	  0,    0,    0,    0,    0,    0 
+  21 ->	  1,    0,    1,    0,    0,    2   #	Plusle (1 Spd), Minun (1 Spd), Slugma (1 Sp.Atk), Wailmer (1 HP)
+  22 ->   1,    0,    2,    0,    0,    6   # Grovyle (2 Spd), Ralts (1 Sp.Atk), Magnemite (1 Sp.Atk), Electrike (1 Spd), Electrike (1 Spd)
+  23 ->   1,    0,    5,    1,    0,    8   # Voltorb (1 Spd), Voltorb (1 Spd), Magnemite (1 Sp.Atk), Magneton (2 Sp.Atk)
+  24 ->   2,    2,    5,    1,    0,    11  # Voltorb (1 Spd), Electrike (1 Spd), Bagon (1 Atk), Makuhita (1 HP), Trapinch (1 Atk), Electrike (1 Spd), Aron (1 Def)
+  25 ->   2,    2,    5,    1,    0,    11  # Grimer (1 HP), Mightyena (2 Atk), Carvanha (1 Atk), Poochyena (1 Atk), 
+  26 ->   6,    17,   8,    6,    0,    16  # Grimer (1 HP), Grimer (1 HP), Carvanha (1 Atk), Mightyena (2 Atk), Sharpedo (2 Atk)
+  27 ->   6,    19,   8,    6,    0,    18  # Golbat (2 Spd), Numel (1 Sp.Atk), Slugma (1 Sp.Atk), Numel (1 Sp.Atk), 
+  28 ->   6,    19,   8,    6,    0,    18  # Torkoal (2 Def)
+
+
+:::
+
+
+=======
+:::variable{name="showMaps" type="boolean" defaultValue=0 theme=success title="Do you want additional maps to help you with optionals/spinners and movement?"}
+Maps are labeled with white arrows for movement and red letters for trainers:
+  - O: Optional fight. These trainers do not spin so you just need to walk around them.
+  - F: Trainer fight. These are trainers you are fighting as a part of the route.
+  - S: Spinner trainer. These trainers spin in place so pass only when they are not looking.
+  - W: Walker trainer. These trainers move/walk so be careful of their movement.
+
+Thanks [fortunatenaruto](https://www.twitch.tv/fortunatenaruto) for compiling the maps.
+:::
+
+>>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
+Choose May and give her a single character name ("!" is the fastest).
+
+Open the options and set:
+- Text Speed: Fast
+- Battle Effects: Off
+- Battle Style: Set
+- Button Mode: L=A
+
+Go upstairs and interact with the clock. Head back downstairs, then to Brendan's house on the left, then head upstairs.
+
+Choose Mudkip at Birch's bag.
+
+You can check your stats in the Poochyena fight; it's faster to use the values at Lv. 6, but it means resets take a few minutes longer.
+
+:::pokemon[Poochyena]
+  - Tackle x2
+:::
+
+Mash B at Birch's lab until you refuse to give a nickname, then mash A. Go north.
+
+:::::trainer[Brendan]
+  :::pokemon[Treeko]
+    - Tackle x3 :info[99.3% range at 13- Attack (# / 31- / 19-)]{color=red}
+  :::
+:::::
+
+
+:::card
+  Ideal stats at Lv. 6:
+  - Attack: **14** (_13 is runnable but not ideal_)
+  - Defense: **10** (9 is runnable but not ideal)
+  - Sp. Attack: **10** (9 is runnable but not ideal)
+  - Sp. Defense: **X** (_Any value is fine_)
+  - Speed: **10** (9 is runnable but not ideal)
+  Run any mudkip except 11 or 12 attack or 8 speed.
+:::
+
+Go back to the lab. Leave the lab and go north, then head west at Oldale Town.
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map1](map1.png)
+:::
+
+If you encounter zigzagoon, catch using pokeball and turn off Experience Share.
+
+:::::trainer[Youngster Calvin]
+  :::pokemon[Zigzagoon]{info="Faster at 10+ Speed (x / 4+ / 4)" infoColor=blue}
+    - Tackle x2 :info[90.2% range at 14 or 15 Atk (# / 10+ / 0-26)]{color=red}
+  :::
+:::::
+
+If you encounter zigzagoon and don't have one, catch using pokeball.
+
+After the catching tutorial, **DEPOSIT ZIGZAGOON INTO PC IN POKECENTER**
+
+Head west then north towards the forest. You can either risk an encounter by going through the grass, or go along the beach. The grass is faster unless you get an encounter.
+
+**DO NOT CATCH ZIGZAGOON OR CUTTER IF YOU GET AN ENCOUNTER**
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map2](map2.png)
+
+![map3](map3.png)
+:::
+
+
+
+:::::::trainer[Team Aqua Grunt]
+  :::::pokemon[Poochyena]{info="Faster at 12+ Speed (x / 20+ / 6+)" infoColor=blue}
+    :::if{source="Mudkip" condition="spatk=(x / 15+ / 0+) && atk=(# / 17- / 2-)"}
+      - Water Gun x3 / x4
+    :::
+    :::if{source="Mudkip" condition="spatk=~(x / 15+ / 0+) || atk=~(# / 17- / 2-)"}
+      - Tackle x3 / x4
+    :::
+  :::::
+:::::::
+
+:info[**Free heal**]{color=pink}
+
+Get the hidden Balm Mushroom next to the spinner in the bottom-left corner.
+
+![Balm Mushroom location](balm-mushroom.png)
+
+Get the Ether directly above the Balm Mushroom.
+
+![Ether location](ether.png)
+
+After leaving the forest, head west and get TM49 Echoed Voice from the boy.
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map4](map4.png)
+:::
+
+![Echoed Voice location](echoed-voice.png)
+
+Head east, then north across the bridge to Rustboro City.
+
+:::if{source="Mudkip" condition="$safeRoute"}
+  Fight first trainer.
+  :::::trainer[Youngster Josh]
+    :::pokemon[Geodude]
+      - Tackle
+      - Water Gun
+    :::
+    :::pokemon[Geodude]
+      - Water Gun
+    :::
+  :::::
+
+
+Talk to last trainer.
+
+:::::trainer[Schoolkid Georgia]
+  :::pokemon[Geodude]
+    - Water Gun
+  :::
+:::::
+
+Potion if in Rock Tomb range.
+
+:::if{source="Mudkip" condition="$safeRoute"}
+  ::damage[Geodude's Rock Tomb]{source="Mudkip" offensive=false movePower=60 level=10 evs=3 opponentLevel=12 stab=true opponentStat=24}
+:::
+:::if{source="Mudkip" condition="!$safeRoute"}
+  ::damage[Geodude's Rock Tomb]{source="Mudkip" offensive=false movePower=60 level=9 evs=1 opponentLevel=12 stab=true opponentStat=24}
+:::
+
+:::::trainer[Leader Roxanne]
+  :::pokemon[Geodude]
+    - Water Gun x2 :info[Do not heal after the first Water Gun!]{color=gray}
+  :::
+  :::if{source="Mudkip" condition="$safeRoute"}
+  :::pokemon[Nosepass]
+    - Water Gun x3 / x4 :info[Heal as needed]{color=gray}
+
+    ::damage[Nosepass' Tackle]{source="Mudkip" offensive=false movePower=50 level=11 evs=4 opponentLevel=14 opponentStat=17}
+  :::
+:::if{source="Mudkip" condition="!$safeRoute"}
+  :::pokemon[Nosepass]
+    - Water Gun x3 / x4 :info[Heal as needed]{color=gray}
+
+    ::damage[Nosepass' Tackle]{source="Mudkip" offensive=false movePower=50 level=10 evs=2 opponentLevel=14 opponentStat=17}
+  :::
+:::::
+
+Talk to the scientist after the cutscene, then head east.
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map5](map5.png)
+:::
+
+If you encounter nincada or zigzagoon and don't have one yet, catch using pokeball. Turn off Experience Share if caught here.
+
+Go through the bottom patch of grass and grab the Repel.
+
+![Repel location](repel.png)
+
+Minimize steps through the grass, then fight the hiker purposely. If the second Geodude can kill you, potion beforehand. (You'll gain ~2 HP before the second Geodude from a level up.)
+
+![Route 116 movement](route-116-movement.gif)
+
+:::if{source="Mudkip" condition="$safeRoute"}
+  ::damage[Geodude's Rollout]{source="Mudkip" offensive=false movePower=30 level=13 evs=6 opponentLevel=10 opponentStat=21 stab=true}
+:::
+:::if{source="Mudkip" condition="!$safeRoute"}
+  ::damage[Geodude's Rollout]{source="Mudkip" offensive=false movePower=30 level=12 evs=4 opponentLevel=10 opponentStat=21 stab=true}
+:::
+
+:::::trainer[Hiker Clark]
+  :::pokemon[Geodude]
+    - Water Gun
+  :::
+  :::pokemon[Geodude]
+    - Mud Slap
+    - Water Gun
+  :::
+:::::
+
+Talk to the sailor before Rusturf Tunnel.
+
+Immediately after entering Rusturf Tunnel:
+  - Repel
+  - Potion
+  - Teach Echoed Voice over Tackle (slot 1).
+  - Teach Rock Tomb over Mud Slap (slot 4).
+
+:::::::trainer[Team Aqua Grunt]
+  :::::pokemon[Poochyena]{info="Faster before Rock Tomb hit at 15+ Speed (20+ / 4+ / 0+) standard route and (13+ / 0+ / 0+) for safe route" infoColor=blue}
+    - Rock Tomb
+    - Water Gun x2
+  :::::
+:::::::
+
+Go back to Rustboro and head to the Devon Corporation. Watch the cutscenes.
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map6](map6.png)
+:::
+
+**DEPOSIT CAUGHT POKEMON in PC IF YOU HAVE NOT YET**
+
+Pick up cut from house west of Pokecenter by talking to man inside.
+
+Head to the mart.
+
+### Rustboro Shopping
+> #### Buy
+> - 2 Repels (^^)
+> - 6 Super Potions (<v)
+
+Go back through Petalburg Woods toward's Mr. Briney's house. Grass patch is last opportunity to catch zigzagoon.
+:::if{source="Mudkip" condition="$showMaps"}
+![map7](map7.png)
+
+![map8](map8.png)
+
+![map9](map9.png)
+:::
+Go inside and talk to Mr. Briney in his house. Intercept him by standing on the tile to the bottom-left of the table immediately, then press up when he asks you where you want to go.
+
+After arriving in Dewford Town, go into to the house next to the pier. Get the Silk Scarf from the Ace Trainer on the left.
+
+**DEPOSIT ZIGZAGOON IN PC IF STILL IN PARTY**
+
+Head to the gym.
+
+**You can skip this menu if you're at full health and have already taught Echoed Voice.**
+- Equip the Silk Scarf.
+- Heal to full.
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map10](map10.png)
+:::
+
+:::::trainer[Battle Girl Laura]
+  :::pokemon[Meditite]
+    - Echoed Voice x3 / x4 (/ x5) (+ Water Gun)
+  :::
+:::::
+
+Equip the Silk Scarf if you have not done so.
+
+**Heal to full and save!**
+
+:::::::trainer[Black Belt Hideki]
+  :::::pokemon[Machop]
+    - Echoed Voice x3
+
+    :::if{source="Mudkip" condition="(spatk=(8-21 / x / x) && $safeRoute) || (spatk=(16-30 / 7- / x) && !$safeRoute)" theme=error}
+      **Echoed Voice x3 is a 46.9% range (including crits).**
+    :::
+    :::if{source="Mudkip" condition="(spatk=(22-28 / 7- / x) && $safeRoute) || (spatk=(31 / 8-15 / 0-7) && !$safeRoute)" theme=error}
+      **Echoed Voice x3 is a 81.5% range (including crits).**
+    :::
+    :::if{source="Mudkip" condition="(spatk=(29-31 / 8-14 / x) && $safeRoute) || (spatk=(x / 16-23 / 8-15) && !$safeRoute)" theme=error}
+      **Echoed Voice x3 is a 93.6% range (including crits).**
+    :::
+    :::if{source="Mudkip" condition="(spatk=(x / 15+ / #) && $safeRoute) || (spatk=(x / 24+ / 16+) && !$safeRoute) " theme=error}
+      **Echoed Voice x3 is a 100% range.**
+    :::
+    :::if{source="Mudkip" condition="$safeRoute"}
+      ::damage[Machop's Low Sweep]{source="Mudkip" offensive=false movePower=65 level=14 evs=7 opponentLevel=13 opponentStat=25 stab=true}
+    :::
+    :::if{source="Mudkip" condition="!$safeRoute"}
+      ::damage[Machop's Low Sweep]{source="Mudkip" offensive=false movePower=65 level=13 evs=5 opponentLevel=13 opponentStat=25 stab=true}
+    :::
+  :::::
+:::::::
+
+Heal to full.
+
+:::::trainer[Battle Girl Tessa]
+  :::pokemon[Meditite]
+    - Echoed Voice x3 / x4 (/ x5)
+  :::
+  :::pokemon[Machop]
+    - Echoed Voice (+ Water Gun)
+  :::
+:::::
+
+- Remove the Silk Scarf.
+- Heal to full.
+- Ether Echoed Voice (mash A).
+
+:::::trainer[Leader Brawly]
+  :::pokemon[Machop]
+    - Echoed Voice x3
+  :::
+  :::pokemon[Makuhita]
+    - Echoed Voice (x2 + Water Gun)
+  :::
+:::::
+
+After exiting the gym, head north to Granite Cave.
+
+- Heal to full.
+- Use a Repel (keep repels active until they run out).
+
+After talking to Steven, head back to the dock and talk to Mr. Briney. Sail to Slateport (press up once).
+
+At the beach, go to the north-east and get the Soft Sand from the pink tuber standing next to the blue tuber.
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map11](map11.png)
+:::
+
+![Soft Sand location](soft-sand.png)
+
+Go to the north-west of the beach and grab the PP Up.
+
+![PP Up location](pp-up.png)
+
+Head to Stern's Shipyard and watch the cutscene.
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map12](map12.png)
+:::
+
+Head to the museum.
+
+:::::trainer[Team Aqua Grunt]
+  :::pokemon[Carvanha]{info="Faster at 23+ Speed (x / x / 26+)" infoColor=blue}
+    - Rock Tomb x2
+    :::if{source="Mudkip" condition="$safeRoute"}
+      - Don't mash B! If you cancel evolve its game over!
+      - Teach Mud Shot over Growl (slot 2)
+    :::
+    :::if{source="Mudkip" condition="atk=(19-25 / 0-5 / x)" theme=error}
+      **Rock Tomb x2 is a 56.3% range.**
+    :::
+    :::if{source="Mudkip" condition="atk=(26+ / 6-12 / x)" theme=error}
+      **Rock Tomb x2 is a 90.6% range.**
+    :::
+    :::if{source="Mudkip" condition="atk=(x / 13+ / 0+)" theme=error}
+      **Rock Tomb x2 is a 100% range.**
+    :::
+
+    ::damage[Caravanha's Assurance]{source="Mudkip" offensive=false movePower=60 level=15 evs=7 opponentLevel=16 opponentStat=33 stab=true}
+  :::
+:::::
+
+
+:::::trainer[Team Aqua Grunt]
+  :::pokemon[Zubat]{info="Faster at 21+ Speed (18+ / # / #)" infoColor=blue}
+    - Rock Tomb
+    - Water Gun
+    :::if{source="Mudkip" condition="$safeRoute"}
+      ::damage[+0 Rock Tomb vs Zubat]{source="Mudkip" evolution=1 movePower=60 level=16 opponentStat=15 effectiveness=2 healthThreshold=35 theme=error}
+
+      ::damage[Zubat's Wing Attack]{source="Mudkip" offensive=false evolution=1 movePower=60 level=16 opponentLevel=14 opponentStat=17 stab=true}
+    :::
+    :::if{source="Mudkip" condition="!$safeRoute"}
+      ::damage[+0 Rock Tomb vs Zubat]{source="Mudkip" movePower=60 level=15 evs=7 opponentStat=15 effectiveness=2 healthThreshold=35 theme=error}
+
+      ::damage[Zubat's Wing Attack]{source="Mudkip" offensive=false movePower=60 level=15 evs=5 opponentLevel=14 opponentStat=17 stab=true}
+  :::
+  :::pokemon[Caravanha]{info="Heal whenever you are in Aqua Jet range" infoColor=gray}
+    - Rock Tomb
+    - Echoed Voice :info[Use Water Gun if in Torrent]{color=gray}
+    :::if{source="Mudkip" condition="$safeRoute"}
+      ::damage[Carvanha's Bite]{source="Mudkip" evolution=1 offensive=false movePower=60 level=16 evs=7 opponentLevel=14 opponentStat=27 stab=true}
+
+      ::damage[Carvanha's Aqua Jet]{source="Mudkip" evolution=1 offensive=false movePower=40 level=16 evs=7 opponentLevel=14 opponentStat=27 stab=true effectiveness=0.5}
+    :::
+    :::if{source="Mudkip" condition="!$safeRoute"}
+      - Teach Mud Shot over Growl (slot 2)
+      ::damage[Carvanha's Bite]{source="Mudkip" offensive=false movePower=60 level=16 evs=5 opponentLevel=14 opponentStat=27 stab=true}
+
+      ::damage[Carvanha's Aqua Jet]{source="Mudkip" offensive=false movePower=40 level=16 evs=5 opponentLevel=14 opponentStat=27 stab=true effectiveness=0.5}
+  :::
+:::::
+
+### Slateport Shopping
+> #### Sell (Top)
+> - ALL Poké Balls
+> - Balm Mushroom
+> - Great Ball
+> - PP Up
+> #### Buy (Top)
+<<<<<<< HEAD
+> - 2 X Speed
+> - 1 X Defense (vv)
+> - 3 X Sp. Def (>^)
+> - 13 X Sp. Attack (^)
+=======
+> - 7 X Speed
+> - 4 X Attack (v)
+> - 4 X Sp. Attack (>^^)
+>>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
+> #### Buy (Bottom)
+> - 6 Super Repels (^^)
+
+
+Head north. Get Cosplay Pickachu
+
+<<<<<<< HEAD
+
+Reset if defense # / 19- / 11- or less than 24 @ level 20 (trapinch bulldoze range)
+Reset if sp defense 15- / 4- / x or less than 25 @ level 20 (Flannery slugma range)
+After getting Cosplay Pikachu
+- Swap Marshtomp and Pikachu.
+- Teach Echoed Voice.
+- Equip the Silk Scarf.
+- Turn of Exp. Share
+
+
+:::::trainer[Poké Fan Isabel]
+=======
+:::if{source="Mudkip" condition="$showMaps"}
+![map13](map13.png)
+:::
+
+:::::trainer[Poké Fan Isabel]{info="These Pokémon cannot damage you." infoColor=gray}
+>>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
+  :::pokemon[Plusle]
+    - Echoed Voice x2 / x3
+  :::
+  :::pokemon[Minun]
+    - Echoed Voice x1 / x2
+  :::
+:::::
+
+After beating Isabel:
+- Heal to full.
+- Use a Super Repel.
+
+Optional: Pick up extra Full Heal
+
+![full_heal](full_heal.png)
+
+
+:::::::trainer[Brendan 2]
+  :::::pokemon[Slugma]
+    :::if{source="Pikachu" condition="spatk=(x / x / 25+)"}
+    - X Sp. Attack x2
+    :::
+    :::if{source="Pikachu" condition="spatk=(# /# / 24-)"}
+    - X Sp. Attack x3
+    ::: 
+    :::if{source="Pikachu" condition="speed=(# / 24- / 5- )"}
+    - X Speed
+    :::
+
+    - (Heal if one Incinerate will put you into Grovyle's Quick Attack range)
+    :::if{source="Mudkip" condition="$showMaps"}
+      - If burned, Super Potion after set-up (you can't/don't have to heal burn, just roll with it)
+    - Echoed Voice x2
+<<<<<<< HEAD
+
+    ::damage[Slugma's Incinerate]{source="Pikachu" offensive=false movePower=60 special=true level=20 evs=0 opponentLevel=18 stab=true opponentStat=34}
+    ::damage[Slugma's Rock Throw]{source="Pikachu" offensive=false movePower=50 special=false level=20 evs=0 opponentLevel=18 stab=true opponentStat=23}
+=======
+    :::if{source="Mudkip" condition="$safeRoute"}
+      ::damage[Slugma's Incinerate]{source="Mudkip" evolution=1 offensive=false movePower=60 special=true level=18 evs=0 opponentLevel=18 stab=true opponentStat=34 effectiveness=0.5}
+    :::
+    :::if{source="Mudkip" condition="!$safeRoute"}
+      ::damage[Slugma's Incinerate]{source="Mudkip" evolution=1 offensive=false movePower=60 special=true level=17 evs=0 opponentLevel=18 stab=true opponentStat=34 effectiveness=0.5}
+    :::
+  :::::
+  :::::pokemon[Grovyle]
+    - Echoed Voice (x2)
+    ::damage[+3 Echoed Voice vs Grovyle]{source="Mudkip" evolution=1 movePower=120 special=true combatStages=3 level=18 evs=1 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
+
+    ::damage[Grovyle's Quick Attack]{source="Mudkip" evolution=1 offensive=false movePower=40 level=18 opponentLevel=20 opponentStat=35}
+>>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
+  :::::
+  :::::pokemon[Wailmer]
+    - Echoed Voice
+  :::::
+  :::::pokemon[Grovyle]
+    - Echoed Voice 
+    ::damage[Grovyle's Quick Attack]{source="Pikachu" offensive=false movePower=40 level=21 opponentLevel=20 opponentStat=35}
+  :::::
+
+:::::::
+
+:info[**Free heal**]{color=pink}
+
+Pickup Revive and Leppa Berry
+
+<<<<<<< HEAD
+Drop Repel and get+register the Mach Bike.
+=======
+Drop Repel and get the Mach Bike.
+:::if{source="Mudkip" condition="$showMaps"}
+Mauville Map
+![map14](map14.png)
+:::
+
+>>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
+
+
+Head north to the gym.
+
+:::::trainer[Wally]
+  :::pokemon[Ralts]
+    - Electroball (Draining Kiss)
+  :::
+:::::
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map15](map15.png)
+:::
+
+Puzzle (room 1): Blue switch, red switch.
+
+:::::trainer[Guitarist Kirk]
+  :::pokemon[Magnemite]
+     - Echoed Voice x3
+  :::
+  :::pokemon[Electrike]
+    - Echoed Voice
+  :::
+:::::
+
+Puzzle (room 2): Top-right blue switch, red switch, top-right blue switch.
+
+Don't Electroball and hope he uses electic move!
+Consider Echoed Voice x2
+:::::trainer[Youngster Ben]
+  :::pokemon[Electrike]
+    - Draining Kiss x2 / x3
+  :::
+:::::
+
+:::::trainer[Guitarist Shawn]
+  :::pokemon[Voltorb]
+    - Echoed Voice x2
+  :::
+  :::pokemon[Voltorb]
+    - Echoed Voice
+  :::
+:::::
+
+Equip Lum Berry
+:::::trainer[Leader Wattson]
+  :::pokemon[Magnemite]
+    - X-Sp. Attack x4 (x3 if Magnemite uses volt switch)
+    - Echoed Voice x2
+  :::
+  :::pokemon[Voltorb]
+    - Draining Kiss x3 (If Missed Range)
+  :::
+  :::pokemon[Magneton]
+    - Echoed Voice x2
+    - Draining Kiss :info[Just hit through Confusion, heal if in magnet bomb range]{color=gray}
+
+    ::damage[Magenton's Magnet Bomb]{source="Pikachu" offensive=false movePower=60 level=22 opponentLevel=14 opponentStat=30 stab=true effectiveness=1}
+  :::
+:::::
+
+Exit the gym and head north. At the rocks:
+- Use a Super Repel (use 4, cancel after Poké Maniac Steve fight before meteor falls).
+- Teach Rock Smash over Water Gun (slot 3).
+- Re-equip Silk Scarf.
+
+:info[**Free heal**]{color=pink}
+
+Head through the cave. After exiting, grab the Persim Berries from the middle bush above the trainer.
+
+wilton will not use fakeout if in kill range - so use that to your advantage to echoed voice him to death
+:::::::trainer[Ace Trainer Wilton]
+  :::::pokemon[Electrike]{info="info goes here" infoColor=blue}
+    - X Special Attack
+    :::if{source="Pikachu" condition="spe=~(x / 18+ /1+) && spatk=~(# / # / 27-)" theme=error}
+    - Extra X Special Attack x2 (use only 1 if Electike used thunder fang)
+    :::
+    - Echoed Voice x2 / x3 :info[_Use the X Attack here if not attempting the range on Bagon_]{color=gray}
+  :::::
+  :::::pokemon[Bagon]{info="Faster at 27+ Speed (17+ / 2+ / 0+)" infoColor=blue}
+    - Echoed Voice x1 (/ x2)
+      ::damage[+1 Echoed Voice vs Bagon]{source="Pikachu" movePower=120 stab=false level=23 special=true opponentStat=21 healthThreshold=52 combatStages=1 otherPowerModifier=1.2}
+  :::::
+  :::::pokemon[Makuhita]
+    - If KO Range, Echoed Voice
+    - If not in KO Range and don't want EB range and at +1 SpAtk, X-Special Attack
+    - Else Electroball :info[Backup if fakeout used]
+
+    :::if{source="Pikachu" condition="spe=(x / 18+ /1+)" theme=error}
+      ::damage[+0 Electroball vs Makuhita]{source="Pikachu" movePower=120 stab=true level=23 special=true opponentStat=21 healthThreshold=63 combatStages=0}
+      ::damage[+1 Electroball vs Makuhita]{source="Pikachu" movePower=120 stab=true level=23 special=true opponentStat=21 healthThreshold=63 combatStages=1}
+      ::damage[+2 Electroball vs Makuhita]{source="Pikachu" movePower=120 stab=true level=23 special=true opponentStat=21 healthThreshold=63 combatStages=2}
+    :::
+    :::if{source="Pikachu" condition="spe=~(x / 18+ /1+)" theme=error}
+      ::damage[+0 Electroball vs Makuhita]{source="Pikachu" movePower=80 stab=true level=23 special=true opponentStat=21 healthThreshold=63 combatStages=0}
+      ::damage[+1 Electroball vs Makuhita]{source="Pikachu" movePower=80 stab=true level=23 special=true opponentStat=21 healthThreshold=63 combatStages=1}
+      ::damage[+2 Electroball vs Makuhita]{source="Pikachu" movePower=120 stab=true level=23 special=true opponentStat=21 healthThreshold=63 combatStages=2}
+    :::
+    ::damage[Makuhita's Knock Off]{source="Pikachu" offensive=false movePower=65 level=23 opponentLevel=20 opponentStat=36 stab=false otherPowerModifier=1.5}
+  :::::
+:::::::
+
+:info[**Free heal**]{color=pink}
+
+heal to full
+:::::trainer[Youngster Neal]
+  :::pokemon[Trapinch]
+    - Echoed Voice x2 :info[If Trapinch uses dig, X Defend and Echoed Voice Again]
+        ::damage[Trapinch's Bulldoze +0 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1}
+        ::damage[Trapinch's Bulldoze +1 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=1}
+        ::damage[Trapinch's Bulldoze +2 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=2}
+  :::
+
+  Heal to Full
+
+  :::pokemon[Electrike]
+    - Echoed Voice :info[calculate quick attack range]{color=red}
+  :::
+:::::
+
+:::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
+  :::pokemon[Aron]
+    Electroball x2
+  :::
+:::::
+
+**Cancel Repel**
+
+Heal to full-ish.
+
+X special attack O-Power and equip Persim
+
+:::trainer[Team Aqua Double]
+  - Electroball x2 Grimer
+  - Draining Kiss Mightyena
+  - (Potion if in Aqua Jet range) :info[_Use a Super Potion if Grovyle is not your ally_]{color=red}
+  - Electroball Carvanha
+
+  ::damage[Carvanha's Aqua Jet (estimated)]{source="Pikachu" offensive=false movePower=40 level=24 evs=0 opponentLevel=23 opponentStat=41 stab=true effectiveness=1}
+:::
+
+Do not got to Mauville (backwards movement)
+Box Marshtomp and Box Heal Pikachu (even if full for PP restore)
+Repel and do backwards movement 
+Equip Persim Berry
+
+Enter the cable car building (watch out for the spinner in front!) and talk to the lady straight ahead.
+
+
+:::::trainer[Team Aqua Grunt]
+  ::::pokemon[Slugma]
+    :::if{source="Pikachu" condition="spe=(14+ /# /#) && spa=(29+/16+/4+)" theme=error}
+     - X Special Attack
+    :::
+    :::if{source="Pikachu" condition="spe=(13- /x /x) || spa=(28-/15-/3-)" theme=error}
+     - X Special Attack x2
+    :::
+     - Electroball
+
+  ::::
+  :::pokemon[Grimer]
+    - Electroball
+    ::damage[+1 Electroball (120 power) vs Grimer]{source="Pikachu" movePower=120 stab=true level=25 special=true opponentStat=29 healthThreshold=67 combatStages=1 effectiveness=1}
+    ::damage[+2 Electroball (120 power) vs Grimer]{source="Pikachu" movePower=120 stab=true level=25 special=true opponentStat=29 healthThreshold=67 combatStages=2 effectiveness=1}
+    ::damage[+1 Electroball (80 power) vs Grimer]{source="Pikachu" movePower=80 stab=true level=25 special=true opponentStat=29 healthThreshold=67 combatStages=1 effectiveness=1}
+    ::damage[+2 Electroball (80 power) vs Grimer]{source="Pikachu" movePower=80 stab=true level=25 special=true opponentStat=29 healthThreshold=67 combatStages=2 effectiveness=1}
+  :::
+:::::
+
+- Enable X Spattk O Power
+
+
+:::::trainer[Aqua Admin Shelly]
+  :::pokemon[Grimer]
+    ::if{source="Pikachu" condition="spa=(#/15-/3-)" theme=error}
+    - X Special Attack
+    ::
+    - Electro Ball x2
+    - If Disabled, Echoed Voice till death
+  :::
+  :::pokemon[Carvanha]
+    - Electo Ball (or Draining Kiss if Disabled)
+    ::damage[Carvanha's Aqua Jet (estimated)]{source="Pikachu" offensive=false movePower=40 level=25 evs=0 opponentLevel=24 opponentStat=53 stab=true effectiveness=1}
+  :::
+:::::
+
+- Equip a Persim Berry.
+- Heal to **full**.
+
+:::::::trainer[Aqua Leader Archie]
+  :::::pokemon[Mightyena]{info="Heal Confusion using Persims and HP as needed" infoColor=gray}
+    :::if{source="Pikachu" condition="speed=(# / 25- / 5-)"}
+    - X Speed
+    :::
+    - Draining Kiss x2
+  :::::
+  :::::pokemon[Sharpedo]
+    - Electroball
+    - Teach Spark over Thunderwave (slot 2)
+
+    ::damage[+1 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=1 theme=error effectiveness=2}
+    ::damage[+2 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=2 theme=error effectiveness=2}
+    ::damage[Sharpedo's Assurance]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=69 stab=true}
+  :::::
+  :::::pokemon[Golbat]{info="Faster at +1 at 34+ Speed (28+ / 12+ / 0+)" infoColor=blue}
+    - Spark
+    ::damage[+1 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=1 theme=error effectiveness=2} 
+    ::damage[+2 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
+    ::damage[+2 Spark vs Golbat]{source="Pikachu" movePower=65 stab=true level=26 special=false opponentStat=40  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
+  :::::
+:::::::
+
+Exit the peak at the left-most tile and bike straight down without stopping. Go to the gym.
+
+Equip Silk Scarf
+Heal to Full
+
+
+:::::trainer[Kindler Andy]
+  :::pokemon[Numel]
+    - X Special Defense
+    - Heal until you get hit with 2 Overheats (lmao)
+    - Echoed Voice until death (heal as necessary)
+  :::
+:::::
+
+X Special Attack O Power
+:::::trainer[Leader Flannery]
+  :::pokemon[Slugma]
+    - X Special Defense
+    - Light Screen Stall
+      - X Special Attack (replace w/ X Special Defense if in Overheat range)
+      - X Special Attack
+      - Heal
+      - Echoed Voice
+    - Echoed Voice until Death
+    ::damage[Slugma's Overheat +1]{source="Pikachu" offensive=false movePower=130 level=26 opponentLevel=26 special=true opponentStat=41 stab=true combatStages=1}
+    ::damage[Slugma's Overheat w/ Sunny Day +1]{source="Pikachu" offensive=false movePower=130 level=26 opponentLevel=26 special=true opponentStat=41 stab=true combatStages=1 otherPowerModifier=1.5}
+ 
+     ::damage[Slugma's Overheat +1 (Second Time)]{source="Pikachu" offensive=false movePower=130 level=26 opponentLevel=26 special=true opponentStat=41 stab=true combatStages=1 opponentCombatStages=-2}
+    ::damage[Slugma's Overheat w/ Sunny Day +1 (Second Time)]{source="Pikachu" offensive=false movePower=130 level=26 opponentLevel=26 special=true opponentStat=41 stab=true combatStages=1 otherPowerModifier=1.5 opponentCombatStages=-2}
+  :::
+  :::pokemon[Numel]
+    - Echoed Voice
+    ::damage[120 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=120 level=26 special=true opponentStat=25  healthThreshold=67 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2} 
+    ::damage[120 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=120 level=26 special=true opponentStat=25  healthThreshold=67 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2} 
+  :::
+  :::pokemon[Torkoal]
+    - Echoed Voice
+    ::damage[160 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2}    
+    ::damage[160 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2}  
+    ::damage[Electro Ball +2 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 stab=true}  
+  :::
+:::::
+#####################################################################################################
+
+:::::trainer[Leader Wattson]
+  :::pokemon[Magnemite]
+    - Water Gun
+    ::::if{source="Mudkip" condition="speed=(17- / 2- / x)"}
+      - X Speed x2
+    ::::
+    ::::if{source="Mudkip" condition="speed=~(17- / 2- / x)"}
+      - X Speed
+    ::::
+    - Bulldoze
+  :::
+  :::pokemon[Magneton]
+    - Bulldoze
+  :::
+  :::pokemon[Voltorb]
+    - Bulldoze
+  :::
+:::::
+
+you want heal on magenmite so it doesn't heal on magneton or voltorb
+
+Exit the gym and head north. At the rocks:
+- Use a Super Repel (use 4, cancel after Poké Maniac Steve fight before meteor falls).
+- Teach Rock Smash over Water Gun (slot 3).
+
+<<<<<<< HEAD
+=======
+:::if{source="Mudkip" condition="$showMaps"}
+![map16](map16.png)
+:::
+
+![Route 113 movement](route-113-movement-1.gif)
+
+>>>>>>> 816a9e556b0bde7ea6c16ca9751fa5fcaeabbb5c
+:info[**Free heal**]{color=pink}
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map17](map17.png)
+:::
+
+Head through the cave. After exiting, grab the Persim Berries from the middle bush above the trainer.
+
+:::::::trainer[Ace Trainer Wilton]
+  :::::pokemon[Electrike]{info="Faster at 36 Speed (x / x / 31)" infoColor=blue}
+    - Bulldoze :info[_Use the X Attack here if not attempting the range on Bagon_]{color=gray}
+  :::::
+  :::::pokemon[Bagon]{info="Faster at 27+ Speed (17+ / 2+ / 0+)" infoColor=blue}
+    - Bulldoze x2 (/ x3)
+    - Do not learn Mud Bomb
+    :::if{source="Mudkip" condition="atk=(7-19 / x / x)" theme=error}
+      **Bulldoze x2 is a 41.4% range.**
+    :::
+    :::if{source="Mudkip" condition="atk=(20-28 / 0-6 / x)" theme=error}
+      **Bulldoze x2 is a 90.2% range.**
+    :::
+    :::if{source="Mudkip" condition="atk=(29+ / 7-15 / x)" theme=error}
+      **Bulldoze x2 is a 99.5 range.**
+    :::
+    :::if{source="Mudkip" condition="atk=(x / 16+ / #)" theme=error}
+      **Bulldoze x2 is a 100% range.**
+    :::
+  :::::
+  :::::pokemon[Makuhita]
+    - X Attack :info[_Unless you used it on Electrike_]{color=gray}
+    - Bulldoze (x2)
+
+    ::damage[+1 Bulldoze vs Makuhita]{source="Mudkip" evolution=1 movePower=60 stab=true level=22 evs=9 opponentStat=21 healthThreshold=63 otherPowerModifier=1.2 combatStages=1 theme=error}
+  :::::
+:::::::
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map18](map18.png)
+:::
+
+![Route 113 movement pt. 3](route-113-movement-3.gif)
+
+:info[**Free heal**]{color=pink}
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map19](map19.png)
+:::
+
+:::::trainer[Youngster Neal]
+  :::pokemon[Trapinch]
+    - Bulldoze (+ Rock Smash)
+  :::
+  :::pokemon[Electrike]
+    - Bulldoze
+  :::
+:::::
+
+:::if{source="Mudkip" condition="$showMaps"}
+![map20](map20.png)
+:::
+
+:::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
+  :::pokemon[Aron]
+    Rock Smash x2
+  :::
+:::::
+
+**Cancel Repel**
+
+Heal to full-ish.
+
+You can pick up Full Heal north of entrance if worried about confusion next fight.
+
+:::trainer[Team Aqua Double]
+  - X Attack
+  - (Persim Berry if confused)
+  - Bulldoze  :info[_Will now outspeed Mightyena at 29+ Speed (18+ / 1+ /0+)_]{color=blue}
+  - Rock Smash Mightyena
+  - (Potion if in Aqua Jet range) :info[_Use a Super Potion if Grovyle is not your ally_]{color=red}
+  - Rock Tomb Carvanha
+
+  ::damage[Carvanha's Aqua Jet (estimated)]{source="Mudkip" evolution=1 offensive=false movePower=40 level=23 evs=0 opponentLevel=23 opponentStat=41 stab=true effectiveness=0.5}
+:::
+
+Say yes when Brendan asks if you want to go back to Mauville.
+
+
+- Heal to full (unless no significant damage was taken).
+- Equip the Soft Sand.
+
+Gym puzzle:
+- Right pad
+- Top pad
+- Far left pad
+- Top-most pad
+- Far right pad
+- Bottom pad
+
+:::::trainer[Kindler Andy]
+  :::pokemon[Numel]
+    - Bulldoze
+  :::
+:::::
+
+:::::trainer[Leader Flannery]
+  :::pokemon[Slugma]
+    - Bulldoze
+  :::
+  :::pokemon[Numel]
+    - Bulldoze
+  :::
+  :::pokemon[Torkoal]
+    - Mud Shot x2 :info[_Rock Smash on turn 2 if not going for the range_]{color=gray}
+    :::if{source="Mudkip" condition="spatk=(14-21 / 0-2 / x)" theme=error}
+      **Mud Shot x2 is a 11.3% range.**
+    :::
+    :::if{source="Mudkip" condition="spatk=(22-28 / 3-9 / x)" theme=error}
+      **Mud Shot x2 is a 68.4% range.**
+    :::
+    :::if{source="Mudkip" condition="spatk=(29+ / 10-21 / 0-9)" theme=error}
+      **Mud Shot x2 is a 96.5 range.**
+    :::
+    :::if{source="Mudkip" condition="spatk=(x / 22+ / 10+)" theme=error}
+      **Mud Shot x2 is a 100% range.**
+    :::    
+  :::
+:::::
+
+Leave and say yes to Brendan when he asks if you want to go to Petalburg.
+
+Withdraw zigzagoon (or nincada) from Pokemart PC.
+
+Bike to Briney's house and sail to Slateport.
+
+Bike north past Slateport City to the house just north of Poké Fan Isabel (Plusle and Minun fight).
+
+Teach Strength to Marshtomp over Mud Slap (Slot 2).
+
+Teach Cut to Zigzagoon (or nincada).
+
+## Puzzle 1 - Cut
+
+Talk to table from bottom right to reveal Trick Master.
+
+![Puzzle 1 Start](puzzle1_start.png)
+
+Use cut and talk to Battle Girl to fight (yellow in map)
+
+![Puzzle 1 Scroll](puzzle1_scroll.png)
+:::::trainer[Battle Girl Cora]
+  :::pokemon[Meditite]
+    - Bulldoze (x2 if endures)
+  :::  
+:::::
+
+
+![Puzzle 1 Exit](puzzle1_exit.png)
+
+Talk to Trick Master and exit through hole.
+
+Exit the house and re-enter to start next puzzle.
+
+## Puzzle 2 - Rock Smash
+
+Talk to shrub on right to reveal Trick Master.
+
+![Puzzle 2 Start](puzzle2_start.png)
+
+Rock smash through puzzle and pass spinner only when safe (blue star).
+
+Follow closely behind roaming trainer.
+
+![Puzzle 2 Scroll](puzzle2_scroll.png)
+
+Follow closely behind roaming trainer to make it out of exit.
+
+![Puzzle 2 Exit](puzzle2_exit.png)
+
+Talk to Trick Master and exit through hole.
+
+Exit the house and re-enter to start next puzzle.
+
+## Puzzle 3 - Flash
+
+You don't actually need flash
+
+Talk to cabinet on left to reveal Trick Master.
+
+![Puzzle 3 Start](puzzle3_start.png)
+
+Hug right edges to avoid the optional dual fight (blue star).
+
+Head down stairs all the way down to scroll.
+
+![Puzzle 3 Scroll](puzzle3.png)
+
+Moving to the top right of the room will shift the camera and reveal the stairs.
+
+![Puzzle 3 Exit](puzzle3_stairs.png)
+
+Return to stairs to top to exit.
+
+Talk to Trick Master and exit through hole.
+
+Exit the house and re-enter to start next puzzle.
+
+## Puzzle 4 - Strength
+
+Talk to mirror on left to reveal Trick Master.
+
+Move boulders according to pictures.
+
+![Puzzle 4 Start](puzzle4_start.png)
+
+![Puzzle 4 Section 1](puzzle4_section1.png)
+
+![Puzzle 4 Section 2](puzzle4_section2.png)
+
+![Puzzle 4 Section 3](puzzle4_section3.png)
+
+Read scroll and exit.
+
+![Puzzle 4 Exit](puzzle4_exit.png)
+
+Talk to Trick Master and exit through hole.
+
+Exit the house and re-enter to start next puzzle.
+
+## Puzzle 5 - Quiz
+
+Talk to cabinet on right to reveal Trick Master.
+
+![Puzzle 5 Start](puzzle5_start.png)
+
+### First Mechadoll
+- The answer is always Nincada
+
+
+### Second Mechadoll
+- What Pokemon was the Devon researcher looking for in Petalburg Woods? - Shroomish
+- Which Pokemon was offered for a trade at the Pokemon Trainers' School? - Seedot
+- In Professor Birch's Bag, there were three Pokemon. Which one was at the right? - Mudkip
+
+
+### Third Mechadoll :info[hint - for the last two questions, the answer is the last word before the question mark]{color=gray}
+- Sell one Escape Rope and buy one Antidote. How much money remains? - P175
+- Which costs more? Three Poke Balls or one Super Potion? - Super Potion
+- Which would cost more, a Full Heal plus a Great Ball, or one Revive? - Revive
+
+
+### Fourth Mechadoll :info[hint - always answer "Female" or "More Men"]{color=gray}
+- Was the first trainer in Dewford Gym male or female? - Female (way to assume genders bro)
+- Rustboro Gym Leader Roxanne used a Geodude. Was it female or male? - Female
+- In Dewford Hall, were there more men or women? - More men
+
+
+### Fifth Mechadoll
+- How many Bikes does Rydel have on display outside his cycle shop? - Two
+- How many people give you Berries at the Pretty Petal flower shop? - One
+- How many signs are in Lilycove City? - Eight
+
+
+
+Talk to Trick Master and exit through hole.
+Exit the house and re-enter to start next puzzle.
+
+## Puzzle 6 - Movement Pads
+
+Talk to cabinet on right to reveal Trick Master.
+
+Move through pads (like Rocket Hideout in FRLG)
+
+![Puzzle 6 Start](puzzle6_start.png)
+
+![Puzzle 6 Scroll](puzzle6_scroll.png)
+
+![Puzzle 6 Exit](puzzle6_exit.png)
+
+Talk to Trick Master and exit through hole.
+
+Exit the house for last time and congrats on finishing!
