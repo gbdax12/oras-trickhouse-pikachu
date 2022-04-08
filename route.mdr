@@ -99,9 +99,6 @@ Mash B at Birch's lab until you refuse to give a nickname, then mash A. Go north
 
 Go back to the lab. Leave the lab and go north, then head west at Oldale Town.
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map1](map1.png)
-:::
 
 If you encounter zigzagoon, catch using pokeball and turn off Experience Share.
 
@@ -118,12 +115,6 @@ After the catching tutorial, **DEPOSIT ZIGZAGOON INTO PC IN POKECENTER**
 Head west then north towards the forest. You can either risk an encounter by going through the grass, or go along the beach. The grass is faster unless you get an encounter.
 
 **DO NOT CATCH ZIGZAGOON OR CUTTER IF YOU GET AN ENCOUNTER**
-
-:::if{source="Mudkip" condition="$showMaps"}
-![map2](map2.png)
-
-![map3](map3.png)
-:::
 
 
 
@@ -150,9 +141,6 @@ Get the Ether directly above the Balm Mushroom.
 
 After leaving the forest, head west and get TM49 Echoed Voice from the boy.
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map4](map4.png)
-:::
 
 ![Echoed Voice location](echoed-voice.png)
 
@@ -208,9 +196,6 @@ Potion if in Rock Tomb range.
 
 Talk to the scientist after the cutscene, then head east.
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map5](map5.png)
-:::
 
 If you encounter nincada or zigzagoon and don't have one yet, catch using pokeball. Turn off Experience Share if caught here.
 
@@ -256,9 +241,6 @@ Immediately after entering Rusturf Tunnel:
 
 Go back to Rustboro and head to the Devon Corporation. Watch the cutscenes.
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map6](map6.png)
-:::
 
 **DEPOSIT CAUGHT POKEMON in PC IF YOU HAVE NOT YET**
 
@@ -272,13 +254,7 @@ Head to the mart.
 > - 6 Super Potions (<v)
 
 Go back through Petalburg Woods toward's Mr. Briney's house. Grass patch is last opportunity to catch zigzagoon.
-:::if{source="Mudkip" condition="$showMaps"}
-![map7](map7.png)
 
-![map8](map8.png)
-
-![map9](map9.png)
-:::
 Go inside and talk to Mr. Briney in his house. Intercept him by standing on the tile to the bottom-left of the table immediately, then press up when he asks you where you want to go.
 
 After arriving in Dewford Town, go into to the house next to the pier. Get the Silk Scarf from the Ace Trainer on the left.
@@ -291,9 +267,6 @@ Head to the gym.
 - Equip the Silk Scarf.
 - Heal to full.
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map10](map10.png)
-:::
 
 :::::trainer[Battle Girl Laura]
   :::pokemon[Meditite]
@@ -363,9 +336,6 @@ After talking to Steven, head back to the dock and talk to Mr. Briney. Sail to S
 
 At the beach, go to the north-east and get the Soft Sand from the pink tuber standing next to the blue tuber.
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map11](map11.png)
-:::
 
 ![Soft Sand location](soft-sand.png)
 
@@ -375,9 +345,6 @@ Go to the north-west of the beach and grab the PP Up.
 
 Head to Stern's Shipyard and watch the cutscene.
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map12](map12.png)
-:::
 
 Head to the museum.
 
@@ -441,9 +408,11 @@ Head to the museum.
 > - PP Up
 > #### Buy (Top)
 > - 2 X Speed
-> - 1 X Defense (vv)
+> - 4 X Attack (v)
+> - 2 X Defense (v)
 > - 3 X Sp. Def (>^)
-> - 13 X Sp. Attack (^)
+> - 9 X Sp. Attack (^)
+> - 4 X Attack
 > #### Buy (Bottom)
 > - 6 Super Repels (^^)
 
@@ -483,17 +452,17 @@ Optional: Pick up extra Full Heal
     :::if{source="Pikachu" condition="spatk=(x / x / 25+)"}
     - X Sp. Attack x2
     :::
-    :::if{source="Pikachu" condition="spatk=(# /# / 24-)"}
+    :::if{source="Pikachu" condition="spatk=(20-31 / 5-31 / 0-24)"}
     - X Sp. Attack x3
+    ::: 
+    :::if{source="Pikachu" condition="spatk=(19- / 4- / x )"}
+    - X Sp. Attack x4
     ::: 
     :::if{source="Pikachu" condition="speed=(# / 24- / 5- )"}
     - X Speed
     :::
 
     - (Heal if one Incinerate will put you into Grovyle's Quick Attack range)
-    :::if{source="Mudkip" condition="$showMaps"}
-      - If burned, Super Potion after set-up (you can't/don't have to heal burn, just roll with it)
-    - Echoed Voice x2
 
     ::damage[Slugma's Incinerate]{source="Pikachu" offensive=false movePower=60 special=true level=20 evs=0 opponentLevel=18 stab=true opponentStat=34}
     ::damage[Slugma's Rock Throw]{source="Pikachu" offensive=false movePower=50 special=false level=20 evs=0 opponentLevel=18 stab=true opponentStat=23}
@@ -523,18 +492,16 @@ Head north to the gym.
   :::
 :::::
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map15](map15.png)
-:::
+:info[**TEACH ROCK SMASH OVER THUNDER WAVE (SLOT 3)**]{color=red}
 
 Puzzle (room 1): Blue switch, red switch.
 
 :::::trainer[Guitarist Kirk]
   :::pokemon[Magnemite]
-     - Echoed Voice x3
+     - Rock Smash x2 (Echoed Voice if extra HP)
   :::
   :::pokemon[Electrike]
-    - Echoed Voice
+    - Echoed Voice (x2-3)
   :::
 :::::
 
@@ -560,15 +527,21 @@ Consider Echoed Voice x2
 Equip Lum Berry
 :::::trainer[Leader Wattson]
   :::pokemon[Magnemite]
-    - X-Sp. Attack x4 (x3 if Magnemite uses volt switch)
-    - Echoed Voice x2
+    - X-Attack x3
+    :::if{source="Pikachu" condition="atk=(26- / 8- / x)"}
+    - X-Attack (extra)
+    :::
+    - Echoed Voice (or Draining Kiss to heal)
+    - Rock Smash
+    ::damage[Magenmite's tackle]{source="Pikachu" offensive=false movePower=40 level=22 opponentLevel=19 opponentStat=19 stab=false effectiveness=1}
+
   :::
   :::pokemon[Voltorb]
-    - Draining Kiss x3 (If Missed Range)
+    - Draining Kiss (Rollout can kill, very important to use Draining Kiss!)
+    - Rock Smash should kill
   :::
   :::pokemon[Magneton]
-    - Echoed Voice x2
-    - Draining Kiss :info[Just hit through Confusion, heal if in magnet bomb range]{color=gray}
+    - Rock Smash x2
 
     ::damage[Magenton's Magnet Bomb]{source="Pikachu" offensive=false movePower=60 level=22 opponentLevel=14 opponentStat=30 stab=true effectiveness=1}
   :::
@@ -796,10 +769,6 @@ Exit the gym and head north. At the rocks:
 
 :info[**Free heal**]{color=pink}
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map17](map17.png)
-:::
-
 Head through the cave. After exiting, grab the Persim Berries from the middle bush above the trainer.
 
 :::::::trainer[Ace Trainer Wilton]
@@ -830,17 +799,12 @@ Head through the cave. After exiting, grab the Persim Berries from the middle bu
   :::::
 :::::::
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map18](map18.png)
-:::
 
 ![Route 113 movement pt. 3](route-113-movement-3.gif)
 
 :info[**Free heal**]{color=pink}
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map19](map19.png)
-:::
+
 
 :::::trainer[Youngster Neal]
   :::pokemon[Trapinch]
@@ -851,9 +815,7 @@ Head through the cave. After exiting, grab the Persim Berries from the middle bu
   :::
 :::::
 
-:::if{source="Mudkip" condition="$showMaps"}
-![map20](map20.png)
-:::
+
 
 :::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
   :::pokemon[Aron]
