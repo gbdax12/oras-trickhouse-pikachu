@@ -660,9 +660,9 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 
 :::::trainer[Aqua Admin Shelly]
   :::pokemon[Grimer]
-    ::if{source="Pikachu" condition="spa=(#/15-/3-)" theme=error}
+    :::if{source="Pikachu" condition="spa=(#/15-/3-)" theme=error}
     - X Special Attack
-    ::
+    :::
     - Electro Ball x2
     - If Disabled, Echoed Voice till death
   :::
@@ -677,10 +677,18 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 
 :::::::trainer[Aqua Leader Archie]
   :::::pokemon[Mightyena]{info="Heal Confusion using Persims and HP as needed" infoColor=gray}
+    - X Defense
     :::if{source="Pikachu" condition="speed=(# / 25- / 5-)"}
     - X Speed
     :::
-    - Draining Kiss x2
+    :::if{source="Pikachu" condition="spatk=(28+ / 12+ / #)"}
+    - X Special Attack x1
+    :::
+    :::if{source="Pikachu" condition="spatk=~(28+ / 12+ / #)"}
+    - X Special Attack x2
+    :::
+    - If no swaggered after setup, add 2 X special attack and don't teach spark
+    - Draining Kiss x2 (alternate DK and X Sp. Attk as needed)
   :::::
   :::::pokemon[Sharpedo]
     - Electroball
@@ -691,7 +699,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
     ::damage[Sharpedo's Assurance]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=69 stab=true}
   :::::
   :::::pokemon[Golbat]{info="Faster at +1 at 34+ Speed (28+ / 12+ / 0+)" infoColor=blue}
-    - Spark
+    - Spark (Unless you didn't get swaggered, then)
     ::damage[+1 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=1 theme=error effectiveness=2} 
     ::damage[+2 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
     ::damage[+2 Spark vs Golbat]{source="Pikachu" movePower=65 stab=true level=26 special=false opponentStat=40  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
