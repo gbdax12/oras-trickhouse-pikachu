@@ -199,13 +199,10 @@ Talk to the scientist after the cutscene, then head east.
 
 If you encounter nincada or zigzagoon and don't have one yet, catch using pokeball. Turn off Experience Share if caught here.
 
-Go through the bottom patch of grass and grab the Repel.
+Grab the Repel.
 
-![Repel location](repel.png)
 
 Minimize steps through the grass, then fight the hiker purposely. If the second Geodude can kill you, potion beforehand. (You'll gain ~2 HP before the second Geodude from a level up.)
-
-![Route 116 movement](route-116-movement.gif)
 
 :::if{source="Mudkip" condition="$safeRoute"}
   ::damage[Geodude's Rollout]{source="Mudkip" offensive=false movePower=30 level=13 evs=6 opponentLevel=10 opponentStat=21 stab=true}
@@ -338,10 +335,9 @@ After exiting the gym, head north to Granite Cave.
 
 After talking to Steven, head back to the dock and talk to Mr. Briney. Sail to Slateport (press up once).
 
-At the beach, go to the north-east and get the Soft Sand from the pink tuber standing next to the blue tuber.
+**DON'T GET SOFT SAND**
 
-
-![Soft Sand location](soft-sand.png)
+** MAYBE NOT GET PP UP**
 
 Go to the north-west of the beach and grab the PP Up.
 
