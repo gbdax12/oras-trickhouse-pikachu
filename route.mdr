@@ -278,6 +278,10 @@ Equip the Silk Scarf if you have not done so.
 
 **Heal to full and save!**
 
+:::if{source="Mudkip" condition="((def=(30+ / 7-22 / 14-) && hp=(x / 7- / x)) || (def=(29- / 6- / x )))" theme=warning}
+  - Defense O-Power
+:::
+
 :::::::trainer[Black Belt Hideki]
   :::::pokemon[Machop]
     - Echoed Voice x3
@@ -409,12 +413,12 @@ Head to the museum.
 > #### Buy (Top)
 > - 2 X Speed
 > - 4 X Attack (v)
-> - 2 X Defense (v)
+> - 3 X Defense (v)
 > - 3 X Sp. Def (>^)
 > - 9 X Sp. Attack (^)
-> - 4 X Attack
 > #### Buy (Bottom)
 > - 6 Super Repels (^^)
+> - maybe 1 super potion earlier and 1 hyper now
 
 
 Head north. Get Cosplay Pickachu
@@ -589,11 +593,13 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 :::::::
 
 :info[**Free heal**]{color=pink}
-
-heal to full
+:info[**Use Defense O Power**]{color=pink}
 :::::trainer[Youngster Neal]
   :::pokemon[Trapinch]
-    - Echoed Voice x2 :info[If Trapinch uses dig, X Defend and Echoed Voice Again]
+    - X Defense
+    - X Special Attack
+    - Heal as needed if Bulldoze/Dig kills
+    - Draining Kiss x3
         ::damage[Trapinch's Bulldoze +0 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1}
         ::damage[Trapinch's Bulldoze +1 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=1}
         ::damage[Trapinch's Bulldoze +2 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=2}
@@ -603,6 +609,7 @@ heal to full
 
   :::pokemon[Electrike]
     - Echoed Voice :info[calculate quick attack range]{color=red}
+      ::damage[Electrike's Quick Attack +2 Def]{source="Pikachu" offensive=false movePower=30 level=23 opponentLevel=19 opponentStat=22 effectiveness=1 stab=false otherPowerModifier=1 combatStages=2}
   :::
 :::::
 
@@ -636,7 +643,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 
 
 :::::trainer[Team Aqua Grunt]
-  ::::pokemon[Slugma]
+  ::::pokemon[Poochyena]
     :::if{source="Pikachu" condition="spe=(14+ /# /#) && spa=(29+/16+/4+)" theme=error}
      - X Special Attack
     :::
@@ -674,6 +681,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 
 - Equip a Persim Berry.
 - Heal to **full**.
+- Defense O Power
 
 :::::::trainer[Aqua Leader Archie]
   :::::pokemon[Mightyena]{info="Heal Confusion using Persims and HP as needed" infoColor=gray}
@@ -689,10 +697,13 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
     :::
     - If no swaggered after setup, add 2 X special attack and don't teach spark
     - Draining Kiss x2 (alternate DK and X Sp. Attk as needed)
+
+    ::damage[Mightyena's Assurance +1]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=50 stab=true combatStages = 1}
+    ::damage[Mightyena's Assurance +2]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=50 stab=true combatStages = 2}
   :::::
   :::::pokemon[Sharpedo]
     - Electroball
-    - Teach Spark over Thunderwave (slot 2)
+    - Teach Spark over Draining Kiss (slot 4)
 
     ::damage[+1 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=1 theme=error effectiveness=2}
     ::damage[+2 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=2 theme=error effectiveness=2}
@@ -746,149 +757,6 @@ X Special Attack O Power
     ::damage[160 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2}    
     ::damage[160 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2}  
     ::damage[Electro Ball +2 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 stab=true}  
-  :::
-:::::
-#####################################################################################################
-
-:::::trainer[Leader Wattson]
-  :::pokemon[Magnemite]
-    - Water Gun
-    ::::if{source="Mudkip" condition="speed=(17- / 2- / x)"}
-      - X Speed x2
-    ::::
-    ::::if{source="Mudkip" condition="speed=~(17- / 2- / x)"}
-      - X Speed
-    ::::
-    - Bulldoze
-  :::
-  :::pokemon[Magneton]
-    - Bulldoze
-  :::
-  :::pokemon[Voltorb]
-    - Bulldoze
-  :::
-:::::
-
-you want heal on magenmite so it doesn't heal on magneton or voltorb
-
-Exit the gym and head north. At the rocks:
-- Use a Super Repel (use 4, cancel after Poké Maniac Steve fight before meteor falls).
-- Teach Rock Smash over Water Gun (slot 3).
-
-:info[**Free heal**]{color=pink}
-
-Head through the cave. After exiting, grab the Persim Berries from the middle bush above the trainer.
-
-:::::::trainer[Ace Trainer Wilton]
-  :::::pokemon[Electrike]{info="Faster at 36 Speed (x / x / 31)" infoColor=blue}
-    - Bulldoze :info[_Use the X Attack here if not attempting the range on Bagon_]{color=gray}
-  :::::
-  :::::pokemon[Bagon]{info="Faster at 27+ Speed (17+ / 2+ / 0+)" infoColor=blue}
-    - Bulldoze x2 (/ x3)
-    - Do not learn Mud Bomb
-    :::if{source="Mudkip" condition="atk=(7-19 / x / x)" theme=error}
-      **Bulldoze x2 is a 41.4% range.**
-    :::
-    :::if{source="Mudkip" condition="atk=(20-28 / 0-6 / x)" theme=error}
-      **Bulldoze x2 is a 90.2% range.**
-    :::
-    :::if{source="Mudkip" condition="atk=(29+ / 7-15 / x)" theme=error}
-      **Bulldoze x2 is a 99.5 range.**
-    :::
-    :::if{source="Mudkip" condition="atk=(x / 16+ / #)" theme=error}
-      **Bulldoze x2 is a 100% range.**
-    :::
-  :::::
-  :::::pokemon[Makuhita]
-    - X Attack :info[_Unless you used it on Electrike_]{color=gray}
-    - Bulldoze (x2)
-
-    ::damage[+1 Bulldoze vs Makuhita]{source="Mudkip" evolution=1 movePower=60 stab=true level=22 evs=9 opponentStat=21 healthThreshold=63 otherPowerModifier=1.2 combatStages=1 theme=error}
-  :::::
-:::::::
-
-
-![Route 113 movement pt. 3](route-113-movement-3.gif)
-
-:info[**Free heal**]{color=pink}
-
-
-
-:::::trainer[Youngster Neal]
-  :::pokemon[Trapinch]
-    - Bulldoze (+ Rock Smash)
-  :::
-  :::pokemon[Electrike]
-    - Bulldoze
-  :::
-:::::
-
-
-
-:::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
-  :::pokemon[Aron]
-    Rock Smash x2
-  :::
-:::::
-
-**Cancel Repel**
-
-Heal to full-ish.
-
-You can pick up Full Heal north of entrance if worried about confusion next fight.
-
-:::trainer[Team Aqua Double]
-  - X Attack
-  - (Persim Berry if confused)
-  - Bulldoze  :info[_Will now outspeed Mightyena at 29+ Speed (18+ / 1+ /0+)_]{color=blue}
-  - Rock Smash Mightyena
-  - (Potion if in Aqua Jet range) :info[_Use a Super Potion if Grovyle is not your ally_]{color=red}
-  - Rock Tomb Carvanha
-
-  ::damage[Carvanha's Aqua Jet (estimated)]{source="Mudkip" evolution=1 offensive=false movePower=40 level=23 evs=0 opponentLevel=23 opponentStat=41 stab=true effectiveness=0.5}
-:::
-
-Say yes when Brendan asks if you want to go back to Mauville.
-
-
-- Heal to full (unless no significant damage was taken).
-- Equip the Soft Sand.
-
-Gym puzzle:
-- Right pad
-- Top pad
-- Far left pad
-- Top-most pad
-- Far right pad
-- Bottom pad
-
-:::::trainer[Kindler Andy]
-  :::pokemon[Numel]
-    - Bulldoze
-  :::
-:::::
-
-:::::trainer[Leader Flannery]
-  :::pokemon[Slugma]
-    - Bulldoze
-  :::
-  :::pokemon[Numel]
-    - Bulldoze
-  :::
-  :::pokemon[Torkoal]
-    - Mud Shot x2 :info[_Rock Smash on turn 2 if not going for the range_]{color=gray}
-    :::if{source="Mudkip" condition="spatk=(14-21 / 0-2 / x)" theme=error}
-      **Mud Shot x2 is a 11.3% range.**
-    :::
-    :::if{source="Mudkip" condition="spatk=(22-28 / 3-9 / x)" theme=error}
-      **Mud Shot x2 is a 68.4% range.**
-    :::
-    :::if{source="Mudkip" condition="spatk=(29+ / 10-21 / 0-9)" theme=error}
-      **Mud Shot x2 is a 96.5 range.**
-    :::
-    :::if{source="Mudkip" condition="spatk=(x / 22+ / 10+)" theme=error}
-      **Mud Shot x2 is a 100% range.**
-    :::    
   :::
 :::::
 
