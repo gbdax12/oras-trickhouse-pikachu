@@ -415,17 +415,39 @@ Head to the museum.
 > - 9 X Sp. Attack (^)
 > #### Buy (Bottom)
 > - 6 Super Repels (^^)
-> - maybe 1 super potion earlier and 1 hyper now
+> - Max Super Potions
 
 
 Head north. Get Cosplay Pickachu
 
 
 Reset if spdef<=23/def<=20 and hp<=45 @ level 20 (Flannery slugma range and Assurance/Bulldoze range)
-After getting Cosplay Pikachu
+
+:::if{source="Pikachu" condition="spdef=(14- / x / x )"}
+**RESET - TOO LOW SP DEF/HP**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(15-19 / 4- / x ) && hp=(x / 26- / x))"}
+**RESET - TOO LOW SP DEF/HP**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(20-24 / 5-9 / x ) && hp=(x / 9- / x))"}
+**RESET - TOO LOW SP DEF/HP**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(25+ / 10-14 / 4- ) && hp=(x / 9- / x))"}
+**RESET - TOO LOW SP DEF/HP**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(x / 15-19 / 5-9 ) && hp=(x / 2- / x))"}
+**RESET - TOO LOW SP DEF/HP**
+:::
+
+Menu Before Isabel
 - Swap Marshtomp and Pikachu.
 - Teach Echoed Voice.
 - Equip the Silk Scarf.
+- Super Repel
 
 
 :::::trainer[Poké Fan Isabel]
@@ -437,9 +459,6 @@ After getting Cosplay Pikachu
   :::
 :::::
 
-After beating Isabel:
-- Heal to full.
-- Use a Super Repel.
 
 Optional: Pick up extra Full Heal
 
@@ -497,7 +516,8 @@ Puzzle (room 1): Blue switch, red switch.
 
 :::::trainer[Guitarist Kirk]
   :::pokemon[Magnemite]
-     - Rock Smash x2 (Echoed Voice if extra HP)
+     - Echoed Voice x3
+     - Rock Smash x2 (If x / 29+ / 14+ )
   :::
   :::pokemon[Electrike]
     - Echoed Voice (x2-3)
@@ -507,10 +527,10 @@ Puzzle (room 1): Blue switch, red switch.
 Puzzle (room 2): Top-right blue switch, red switch, top-right blue switch.
 
 Don't Electroball and hope he uses electic move!
-Consider Echoed Voice x2
+
 :::::trainer[Youngster Ben]
   :::pokemon[Electrike]
-    - Draining Kiss x2 / x3
+    - Echoed Voice x2
   :::
 :::::
 
@@ -523,7 +543,8 @@ Consider Echoed Voice x2
   :::
 :::::
 
-Equip Lum Berry
+**Equip Lum Berry**
+
 :::::trainer[Leader Wattson]
   :::pokemon[Magnemite]
     - X-Attack x3
@@ -589,7 +610,7 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 :::::::
 
 :info[**Free heal**]{color=pink}
-:info[**Use Defense O Power**]{color=pink}
+:info[**Swap to Mudkip in front**]{color=pink}
 :::::trainer[Youngster Neal]
   :::pokemon[Trapinch]
     - X Defense
@@ -601,17 +622,23 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
         ::damage[Trapinch's Bulldoze +2 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=2}
   :::
 
-  Heal to Full
-
   :::pokemon[Electrike]
     - Echoed Voice :info[calculate quick attack range]{color=red}
       ::damage[Electrike's Quick Attack +2 Def]{source="Pikachu" offensive=false movePower=30 level=23 opponentLevel=19 opponentStat=22 effectiveness=1 stab=false otherPowerModifier=1 combatStages=2}
   :::
 :::::
 
+:info[**Swap to Mudkip in front**]{color=pink}
+
+- Heal if in Iron Head Range
+
+::damage[Aron's Rock Tomb]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=23 opponentStat=37 effectiveness=1 stab=true otherPowerModifier=1}
+::damage[Aron's Iron Head]{source="Pikachu" offensive=false movePower=80 level=23 opponentLevel=19 opponentStat=37 effectiveness=1 stab=true otherPowerModifier=1}
+
 :::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
   :::pokemon[Aron]
-    Electroball x2
+    - Electroball
+    - Rock Smash
   :::
 :::::
 
@@ -727,7 +754,10 @@ Exit the peak at the left-most tile and bike straight down without stopping. Go 
     - Heal until you get hit with 2 Overheats (lmao)
     - Echoed Voice until death (heal as necessary)
 
-    If you had to reset, use X Defense O-Power to help
+    **CALCULATE RANGE MIN SP. DEF AND HP TO AVOID +1 DEATH.
+
+    ::damage[Numel's Earth Power]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=1}
+
   :::
 :::::
 
