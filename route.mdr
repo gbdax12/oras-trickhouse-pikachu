@@ -410,12 +410,11 @@ Head to the museum.
 > #### Buy (Top)
 > - 2 X Speed
 > - 4 X Attack (v)
-> - 3 X Defense (v)
-> - 3 X Sp. Def (>^)
-> - 9 X Sp. Attack (^)
+> - 2 X Defense (v)
+> - 4 X Sp. Def (>^)
+> - 15 X Sp. Attack (^)
 > #### Buy (Bottom)
-> - 6 Super Repels (^^)
-> - Max Super Potions
+> - 4 Super Repels (^^)
 
 
 Head north. Get Cosplay Pickachu
@@ -581,8 +580,8 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 :::::::trainer[Ace Trainer Wilton]
   :::::pokemon[Electrike]{info="info goes here" infoColor=blue}
     - X Special Attack
-    :::if{source="Pikachu" condition="spe=~(x / 18+ /1+) && spatk=~(# / # / 27-)" theme=error}
-    - Extra X Special Attack x2 (use only 1 if Electike used thunder fang)
+    :::if{source="Pikachu" condition="spe=~(x / 18+ /1+) && spatk=(# / # / 26-)" theme=error}
+    - Extra X Special Attack (use only 1 if Electike used thunder fang)
     :::
     - Echoed Voice x2 / x3 :info[_Use the X Attack here if not attempting the range on Bagon_]{color=gray}
   :::::
@@ -637,8 +636,8 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 :::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
   :::pokemon[Aron]
-    - Electroball
     - Rock Smash
+    - If Yellow, Rock Smash, otherwise Electroball
   :::
 :::::
 
@@ -651,6 +650,7 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 :::trainer[Team Aqua Double]
   - Electroball x2 Grimer
   - Draining Kiss Mightyena
+  - If snarled, Rock Smash Mightyena
   - (Potion if in Aqua Jet range) :info[_Use a Super Potion if Grovyle is not your ally_]{color=red}
   - Electroball Carvanha
 
@@ -658,6 +658,12 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 :::
 
 **Go to Mauville** (forewards movement)
+
+### Mauville Shopping
+> #### Sell (Top)
+> - 2 Max Repels
+> - 2 Full Heals
+> - Max Hyper Potions
 
 - Pick up backup X Defense if extra used in Trapinch fight (should have 2)
 - Box Marshtomp and Box Heal Pikachu (even if full for PP restore)
@@ -728,6 +734,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
   :::::
   :::::pokemon[Sharpedo]
     - Electroball
+    - If Snarled out of range, Rock Smash and prey
     - Teach Spark over Draining Kiss (slot 4)
 
     ::damage[+1 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=1 theme=error effectiveness=2}
@@ -761,10 +768,11 @@ Exit the peak at the left-most tile and bike straight down without stopping. Go 
   :::
 :::::
 
-X Special Attack O Power
+Sp Atk O Power (or Sp Def if used extra X Sp Def)
 :::::trainer[Leader Flannery]
   :::pokemon[Slugma]
-    - X Special Defense
+    - X Sp Def (or X Sp Atk if Sp Def O Power used)
+    - If +3 is in range, don't light screen stall
     - Light Screen Stall
       - X Special Attack (replace w/ X Special Defense if in Overheat range)
       - X Special Attack
@@ -780,8 +788,8 @@ X Special Attack O Power
   :::
   :::pokemon[Numel]
     - Echoed Voice
-    ::damage[120 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=120 level=26 special=true opponentStat=25  healthThreshold=67 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2} 
-    ::damage[120 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=120 level=26 special=true opponentStat=25  healthThreshold=67 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2} 
+    ::damage[120 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=120 level=26 special=true opponentStat=25  healthThreshold=67 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2} 
+    ::damage[120 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=120 level=26 special=true opponentStat=25  healthThreshold=67 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2} 
   :::
   :::pokemon[Torkoal]
     - Echoed Voice
