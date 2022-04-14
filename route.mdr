@@ -414,7 +414,7 @@ Head to the museum.
 > - 4 X Sp. Def (>^)
 > - 14 X Sp. Attack (^)
 > #### Buy (Bottom)
-> - 4 Super Repels (^^)
+> - 6 Super Repels (^^)
 
 
 Head north. Get Cosplay Pickachu
@@ -505,7 +505,7 @@ Head north to the gym.
 
 :::::trainer[Wally]
   :::pokemon[Ralts]
-    - Electroball (Draining Kiss)
+    - Electroball x2
   :::
 :::::
 
@@ -610,12 +610,12 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 :info[**Free heal**]{color=pink}
 :info[**Swap to Mudkip in front**]{color=pink}
+
 :::::trainer[Youngster Neal]
   :::pokemon[Trapinch]
-    - X Defense
+    - Growl w/ Mudkip until death (try to get at least -3)
     - X Special Attack
-    - Heal as needed if Bulldoze/Dig kills
-    - Draining Kiss x3
+    - Echoed Voice x3
         ::damage[Trapinch's Bulldoze +0 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1}
         ::damage[Trapinch's Bulldoze +1 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=1}
         ::damage[Trapinch's Bulldoze +2 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=2}
@@ -693,7 +693,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
   :::
 :::::
 
-- Enable X Spattk O Power
+**Enable X Spattk O Power**
 
 
 :::::trainer[Aqua Admin Shelly]
@@ -728,6 +728,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
     :::
     - If no swaggered after setup, add 2 X special attack and don't teach spark
     - Draining Kiss x2 (alternate DK and X Sp. Attk as needed)
+    - If snarled and swaggered, Rock Smash
 
     ::damage[Mightyena's Assurance +1]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=50 stab=true combatStages = 1}
     ::damage[Mightyena's Assurance +2]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=50 stab=true combatStages = 2}
