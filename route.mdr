@@ -568,7 +568,7 @@ Don't Electroball and hope he uses electic move!
 
 Exit the gym and head north.
 
-:info[**Free heal**]{color=pink}
+:info[**Free heal**]{color=green}
 
 Before grass:
 - Use a Super Repel (use 4, cancel after Poké Maniac Steve fight before meteor falls).
@@ -608,8 +608,9 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
   :::::
 :::::::
 
-:info[**Free heal**]{color=pink}
-:info[**Swap to Mudkip in front**]{color=pink}
+:info[**Free heal**]{color=green}
+
+:info[**Swap to Mudkip in front**]{color=blue}
 
 :::::trainer[Youngster Neal]
   :::pokemon[Trapinch]
@@ -627,7 +628,7 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
   :::
 :::::
 
-:info[**Swap to Mudkip in front**]{color=pink}
+:info[**Swap to Pikachu in front**]{color=blue}
 
 - Heal if in Iron Head Range
 
@@ -644,8 +645,9 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 **Cancel Repel**
 
 - Heal to full-ish.
-- X special attack O-Power.
-- Equip Persim
+- Equip Persim.
+
+:info[**Enable Sp. Atk O-Power**]{color=pink}
 
 :::trainer[Team Aqua Double]
   - Electroball x2 Grimer
@@ -661,12 +663,10 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 ### Mauville Shopping
 > #### Sell (Top)
-> - 2 Max Repels
-> - 2 Full Heals
-> - Max Hyper Potions
+> - 3 Full Heals (>>^^)
+> - Max Hyper Potions (<)
 
 - Pick up backup X Defense if extra used in Trapinch fight (should have 2)
-- Box Marshtomp and Box Heal Pikachu (even if full for PP restore)
 - Repel
 - Equip Persim Berry is used.
 
@@ -684,8 +684,8 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
      - Electroball
 
   ::::
-  :::pokemon[Grimer]
-    - Electroball
+  :::pokemon[Grimer]{info="120 electroball at 48 speed ( 14+ / # / # )" infoColor=gray}
+    - Electroball 
     ::damage[+1 Electroball (120 power) vs Grimer]{source="Pikachu" movePower=120 stab=true level=25 special=true opponentStat=29 healthThreshold=67 combatStages=1 effectiveness=1}
     ::damage[+2 Electroball (120 power) vs Grimer]{source="Pikachu" movePower=120 stab=true level=25 special=true opponentStat=29 healthThreshold=67 combatStages=2 effectiveness=1}
     ::damage[+1 Electroball (80 power) vs Grimer]{source="Pikachu" movePower=80 stab=true level=25 special=true opponentStat=29 healthThreshold=67 combatStages=1 effectiveness=1}
@@ -693,7 +693,8 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
   :::
 :::::
 
-**Enable X Spattk O Power**
+
+:info[**Enable Sp. Atk O-Power**]{color=pink}
 
 
 :::::trainer[Aqua Admin Shelly]
@@ -712,7 +713,8 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 
 - Equip a Persim Berry.
 - Heal to **full**.
-- Defense O Power
+
+:info[**Enable Defense O-Power**]{color=pink}
 
 :::::::trainer[Aqua Leader Archie]
   :::::pokemon[Mightyena]{info="Heal Confusion using Persims and HP as needed" infoColor=gray}
@@ -750,17 +752,22 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
   :::::
 :::::::
 
-Exit the peak at the left-most tile and bike straight down without stopping. Go to the gym.
+Exit the peak at the left-most tile and bike straight down without stopping. 
 
-- Equip Silk Scarf
-- Heal to Full
+Go to box and pick up cutter and heal all pokes
+
+- Swap cutter to front
+- Equip Silk Scarf to Pikachu
+
 
 
 :::::trainer[Kindler Andy]
   :::pokemon[Numel]
-    - X Special Defense
+    - Growl with cutter till death
+    - X Special Defense Pikachu
     - Heal until you get hit with 2 Overheats (lmao)
     - Echoed Voice until death (heal as necessary)
+    - If crit death, switch to mudkip and revive if picked up
 
     **CALCULATE RANGE MIN SP. DEF AND HP TO AVOID +1 DEATH.
 
@@ -769,10 +776,13 @@ Exit the peak at the left-most tile and bike straight down without stopping. Go 
   :::
 :::::
 
-Sp Atk O Power (or Sp Def if used extra X Sp Def)
+**Swap to Pikachu to front**
+
+:info[**Sp Atk O-Power (or Sp Def if used extra X Sp Def)**]{color=pink}
+
 :::::trainer[Leader Flannery]
   :::pokemon[Slugma]
-    - X Sp Def (or X Sp Atk if Sp Def O Power used)
+    - X Sp Def (or X Sp Atk if Sp Def O-Power used)
     - If +3 is in range, don't light screen stall
     - Light Screen Stall
       - X Special Attack (replace w/ X Special Defense if in Overheat range)
