@@ -486,10 +486,18 @@ Optional: Pick up extra Full Heal
   :::::
   :::::pokemon[Wailmer]
     - Echoed Voice
+
+    ::damage[+1 Echoed Voice vs Wailmer]{source="Pikachu" movePower=120 special=true combatStages=1 opponentStat=21 healthThreshold=79 otherPowerModifier=1.2 theme=error}
+    ::damage[+2 Echoed Voice vs Wailmer]{source="Pikachu" movePower=120 special=true combatStages=2 opponentStat=21 healthThreshold=79 otherPowerModifier=1.2 theme=error}
+    ::damage[+3 Echoed Voice vs Wailmer]{source="Pikachu" movePower=120 special=true combatStages=3 opponentStat=21 healthThreshold=79 otherPowerModifier=1.2 theme=error}
   :::::
   :::::pokemon[Grovyle]
     - Echoed Voice 
     ::damage[Grovyle's Quick Attack]{source="Pikachu" offensive=false movePower=40 level=21 opponentLevel=20 opponentStat=35}
+
+    ::damage[Echoed Voice vs Grovyle]{source="Pikachu" movePower=200 special=true combatStages=0 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
+    ::damage[+1 Echoed Voice vs Grovyle]{source="Pikachu" movePower=200 special=true combatStages=1 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
+    ::damage[+2 Echoed Voice vs Grovyle]{source="Pikachu" movePower=200 special=true combatStages=2 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
   :::::
 
 :::::::
