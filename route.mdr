@@ -133,16 +133,9 @@ Head west then north towards the forest. You can either risk an encounter by goi
 
 Get the hidden Balm Mushroom next to the spinner in the bottom-left corner.
 
-![Balm Mushroom location](balm-mushroom.png)
-
 Get the Ether directly above the Balm Mushroom.
 
-![Ether location](ether.png)
-
 After leaving the forest, head west and get TM49 Echoed Voice from the boy.
-
-
-![Echoed Voice location](echoed-voice.png)
 
 Head east, then north across the bridge to Rustboro City.
 
@@ -228,6 +221,7 @@ Immediately after entering Rusturf Tunnel:
   - Potion
   - Teach Echoed Voice over Tackle (slot 1).
   - Teach Rock Tomb over Mud Slap (slot 4).
+  - **Turn off Experience Share**
 
 :::::::trainer[Team Aqua Grunt]
   :::::pokemon[Poochyena]{info="Faster before Rock Tomb hit at 15+ Speed (20+ / 4+ / 0+) standard route and (13+ / 0+ / 0+) for safe route" infoColor=blue}
@@ -336,13 +330,7 @@ After exiting the gym, head north to Granite Cave.
 
 After talking to Steven, head back to the dock and talk to Mr. Briney. Sail to Slateport (press up once).
 
-**DON'T GET SOFT SAND**
-
-** MAYBE NOT GET PP UP**
-
-Go to the north-west of the beach and grab the PP Up.
-
-![PP Up location](pp-up.png)
+**DON'T GET SOFT SAND + PP UP**
 
 Head to Stern's Shipyard and watch the cutscene.
 
@@ -420,7 +408,9 @@ Head to the museum.
 Head north. Get Cosplay Pickachu
 
 
-Reset if spdef<=23/def<=20 and hp<=45 @ level 20 (Flannery slugma range and Assurance/Bulldoze range)
+Reset if spdef<=23 and hp<=45 @ level 20 (Flannery slugma range and Assurance/Bulldoze range)
+
+Consider reset if def <= 20 but could just x defense x2 on mightyena.
 
 :::if{source="Pikachu" condition="spdef=(14- / x / x )"}
 **RESET - TOO LOW SP DEF/HP**
@@ -640,11 +630,10 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 - Heal if in Iron Head Range
 
-::damage[Aron's Rock Tomb]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=23 opponentStat=37 effectiveness=1 stab=true otherPowerModifier=1}
 ::damage[Aron's Iron Head]{source="Pikachu" offensive=false movePower=80 level=23 opponentLevel=19 opponentStat=37 effectiveness=1 stab=true otherPowerModifier=1}
 
 :::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
-  :::pokemon[Aron]
+  :::pokemon[Aron]{info="Consider Electroball x2 if minus attack nature" infoColor=blue}
     - Rock Smash
     - If Yellow, Rock Smash, otherwise Electroball
   :::
@@ -674,7 +663,7 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 > - 3 Full Heals (>>^^)
 > - Max Hyper Potions (<)
 
-- Pick up backup X Defense if extra used in Trapinch fight (should have 2)
+- Pick up backup X Defense if extra used in Trapinch fight (should have 1)
 - Repel
 - Equip Persim Berry is used.
 
@@ -687,7 +676,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
      - X Special Attack
     :::
     :::if{source="Pikachu" condition="spe=(13- /x /x) || spa=(28-/15-/3-)" theme=error}
-     - X Special Attack x2
+     - X Special Attack extra
     :::
      - Electroball
 
@@ -764,27 +753,23 @@ Exit the peak at the left-most tile and bike straight down without stopping.
 
 Go to box and pick up cutter and heal all pokes
 
-- Swap cutter to front
+
 - Equip Silk Scarf to Pikachu
 
 
 
 :::::trainer[Kindler Andy]
   :::pokemon[Numel]
-    - Growl with cutter till death
     - X Special Defense Pikachu
     - Heal until you get hit with 2 Overheats (lmao)
     - Echoed Voice until death (heal as necessary)
     - If crit death, switch to mudkip and revive if picked up
-
-    **CALCULATE RANGE MIN SP. DEF AND HP TO AVOID +1 DEATH.
 
     ::damage[Numel's Earth Power]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=1}
 
   :::
 :::::
 
-**Swap to Pikachu to front**
 
 :info[**Sp Atk O-Power (or Sp Def if used extra X Sp Def)**]{color=pink}
 
@@ -820,15 +805,13 @@ Go to box and pick up cutter and heal all pokes
 
 Leave and say yes to Brendan when he asks if you want to go to Petalburg.
 
-Withdraw zigzagoon (or nincada) from Pokemart PC.
-
 Bike to Briney's house and sail to Slateport.
 
 Bike north past Slateport City to the house just north of Poké Fan Isabel (Plusle and Minun fight).
 
-Teach Strength to Marshtomp over Mud Slap (Slot 2).
+Teach Strength to Pikachu over Echoed Voice (Slot 1)
 
-Teach Cut to Zigzagoon (or nincada).
+Teach Cut to Cutter Pokemon
 
 ## Puzzle 1 - Cut
 
@@ -841,7 +824,7 @@ Use cut and talk to Battle Girl to fight (yellow in map)
 ![Puzzle 1 Scroll](puzzle1_scroll.png)
 :::::trainer[Battle Girl Cora]
   :::pokemon[Meditite]
-    - Bulldoze (x2 if endures)
+    - Electroball (x2)
   :::  
 :::::
 
