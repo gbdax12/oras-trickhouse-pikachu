@@ -711,34 +711,47 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 - Equip a Persim Berry.
 - Heal to **full**.
 
-:info[**Enable Defense O-Power**]{color=pink}
+:info[Optional **Defense O-Power** Best to use if you need to X Speed]{color=pink}
 
 :::::::trainer[Aqua Leader Archie]
   :::::pokemon[Mightyena]{info="Heal Confusion using Persims and HP as needed" infoColor=gray}
-    - X Defense
+    - X Defense (skip if you Def O-Power and can survive 2 assurance)
     :::if{source="Pikachu" condition="speed=(# / 25- / 5-)"}
     - X Speed
     :::
-    :::if{source="Pikachu" condition="spatk=(28+ / 12+ / #)"}
-    - X Special Attack x1
+
+    :::if{source="Pikachu" condition="atk=(x / 22+ / 10+)"}
+    - **Attack Strat** (do if swaggered on x def/x speed turn)
+      - Rock Smash
+      - If swaggered again, heal and rock smash again KO (+4)
+      - If no swagger, X Attack or consider bailing and go to Sp. Attk. Strat.
     :::
-    :::if{source="Pikachu" condition="spatk=~(28+ / 12+ / #)"}
-    - X Special Attack x2
-    :::
-    - If no swaggered after setup, add 2 X special attack and don't teach spark
-    - Draining Kiss x2 (alternate DK and X Sp. Attk as needed)
+
+    - **Special Attack Strat**
+      :::if{source="Pikachu" condition="spatk=(28+ / 12+ / #)"}
+      - X Special Attack x1
+      :::
+      :::if{source="Pikachu" condition="spatk=~(28+ / 12+ / #)"}
+      - X Special Attack x2
+      :::
+      - Draining Kiss x2 (alternate DK and X Sp. Attk as needed)
+      - If no swaggered after setup, add 2 X special attack and don't teach spark
     - If snarled and swaggered, Rock Smash
 
     ::damage[Mightyena's Assurance +1]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=50 stab=true combatStages = 1}
     ::damage[Mightyena's Assurance +2]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=50 stab=true combatStages = 2}
   :::::
   :::::pokemon[Sharpedo]
-    - Electroball
+    - Electroball (if Sp Attk Strat otherwise Rock Smash)
     - If Snarled out of range, Rock Smash and prey
     - Teach Spark over Draining Kiss (slot 4)
 
-    ::damage[+1 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=1 theme=error effectiveness=2}
-    ::damage[+2 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=2 theme=error effectiveness=2}
+    ::damage[+1 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=1 theme=warning effectiveness=2}
+    ::damage[+2 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=2 theme=warning effectiveness=2}
+    
+    ::damage[+3 Rock Smash vs Sharpedo]{source="Pikachu" movePower=40 stab=false level=25 special=false opponentStat=26  healthThreshold=74 combatStages=3 theme=error effectiveness=2}    
+    ::damage[+4 Rock Smash vs Sharpedo]{source="Pikachu" movePower=40 stab=false level=25 special=false opponentStat=26  healthThreshold=74 combatStages=4 theme=error effectiveness=2}  
+
     ::damage[Sharpedo's Assurance]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=69 stab=true}
   :::::
   :::::pokemon[Golbat]{info="Faster at +1 at 34+ Speed (28+ / 12+ / 0+)" infoColor=blue}
@@ -765,8 +778,9 @@ Go to box and pick up cutter and heal all pokes
     - Echoed Voice until death (heal as necessary)
     - If crit death, switch to mudkip and revive if picked up
 
-    ::damage[Numel's Earth Power]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=1}
-
+    ::damage[Numel's Earth Power @ 1]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=1}
+    ::damage[Numel's Earth Power @ 4]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=4}
+    ::damage[Numel's Earth Power @ 5]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=5}
   :::
 :::::
 
