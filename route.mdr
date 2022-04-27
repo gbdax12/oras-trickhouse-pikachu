@@ -785,7 +785,19 @@ Go to box and pick up cutter and heal all pokes
 :::::
 
 
-:info[**Sp Atk O-Power (or Sp Def if used extra X Sp Def)**]{color=pink}
+
+:::if{source="Pikachu" condition="(speed=(x / x / 16+) && spatk=(29+ / 14+ / 3+ ))"}
+  :info[**Can get away with +2 Sp Atk so optional O Power**]{color=blue}
+:::
+:::if{source="Pikachu" condition="(speed=(x / x / 16+) && spatk=~(29+ / 14+ / 3+ ))"}
+  :info[**Should go to +3 Sp Atk, O Power if < 3 X Sp Atk**]{color=pink}
+:::
+:::if{source="Pikachu" condition="(speed=~(x / x / 16+) && spatk=(x /x /25+))"}
+  :info[**Can get away with +2 Sp Atk so optional O Power**]{color=blue}
+:::
+:::if{source="Pikachu" condition="(speed=~(x / x / 16+) && spatk=~(x /x /25+))"}
+  :info[**Should go to +3 Sp Atk, O Power if < 3 X Sp Atk**]{color=pink}
+:::
 
 :::::trainer[Leader Flannery]
   :::pokemon[Slugma]
@@ -810,10 +822,21 @@ Go to box and pick up cutter and heal all pokes
     ::damage[120 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=120 level=26 special=true opponentStat=25  healthThreshold=67 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2} 
   :::
   :::pokemon[Torkoal]
-    - Echoed Voice
-    ::damage[160 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2}    
-    ::damage[160 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2}  
-    ::damage[Electro Ball +2 vs Numel]{source="Pikachu" movePower=160 level=26 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 stab=true}  
+    - Echoed Voice/Electro Ball based on range below:
+    
+    ::damage[160 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=160 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2}    
+    ::damage[160 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=160 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2}  
+    ::damage[200 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=160 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2}  
+
+    :::if{source="Pikachu" condition="speed=(x / x / 16+)"}
+      ::damage[Electro Ball +2 vs Numel]{source="Pikachu" movePower=150 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 stab=true}  
+      ::damage[Electro Ball +3 vs Numel]{source="Pikachu" movePower=150 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 stab=true}  
+    :::
+
+    :::if{source="Pikachu" condition="speed=~(x / x / 16+)"}
+      ::damage[Electro Ball +2 vs Numel]{source="Pikachu" movePower=120 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 stab=true}  
+      ::damage[Electro Ball +3 vs Numel]{source="Pikachu" movePower=120 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 stab=true} 
+    :::
   :::
 :::::
 
