@@ -242,7 +242,7 @@ Head to the mart.
 ### Rustboro Shopping
 > #### Buy
 > - 2 Repels (^^)
-> - 6 Super Potions (<v)
+> - 5 Super Potions (<v)
 
 Go back through Petalburg Woods toward's Mr. Briney's house. Grass patch is last opportunity to catch zigzagoon.
 
@@ -397,7 +397,7 @@ Head to the museum.
 > - PP Up
 > #### Buy (Top)
 > - 2 X Speed
-> - 4 X Attack (v)
+> - 5 X Attack (v)
 > - 2 X Defense (v)
 > - 4 X Sp. Def (>^)
 > - 14 X Sp. Attack (^)
@@ -407,6 +407,7 @@ Head to the museum.
 
 Head north. Get Cosplay Pickachu
 
+::variable{name="outfit" type="select" title="Which Outfit for Pikachu?" options='["popstar", "belle", "libre"]' defaultValue="popstar"}
 
 Reset if spdef<=23 and hp<=45 @ level 20 (Flannery slugma range and Assurance/Bulldoze range)
 
@@ -453,6 +454,17 @@ Optional: Pick up extra Full Heal
 
 ![full_heal](full_heal.png)
 
+:::if{source="Pikachu" condition="$outfit == 'belle' && atk=(x /25+ / 15+) && spatk=(# /# /24- )"}
+Optional Icicle Crash Strat (honestly don't do cause icicle crash not guaranteed)
+**Attack O Power**
+- Slugma - EB x2
+- Wailmer - EB x2
+- Grovyle - IC
+
+::damage[Icicle Crash vs Grovyle]{source="Pikachu" movePower=85 special=false combatStages=0 opponentStat=27 healthThreshold=54 otherPowerModifier=1 theme=error effectiveness=2}
+::damage[Icicle Crash +1 vs Grovyle]{source="Pikachu" movePower=85 special=false combatStages=1 opponentStat=27 healthThreshold=54 otherPowerModifier=1 theme=error effectiveness=2}
+So 1-2 less step (but you have to o power) but yea idk.
+:::
 
 :::::::trainer[Brendan 2]
   :::::pokemon[Slugma]
@@ -470,9 +482,10 @@ Optional: Pick up extra Full Heal
     :::
 
     - (Heal if one Incinerate will put you into Grovyle's Quick Attack range)
+    - Echoed Voice x2
 
     ::damage[Slugma's Incinerate]{source="Pikachu" offensive=false movePower=60 special=true level=20 evs=0 opponentLevel=18 stab=true opponentStat=34}
-    ::damage[Slugma's Rock Throw]{source="Pikachu" offensive=false movePower=50 special=false level=20 evs=0 opponentLevel=18 stab=true opponentStat=23}
+    ::damage[Grovyle's Quick Attack]{source="Pikachu" offensive=false movePower=40 level=21 opponentLevel=20 opponentStat=35}
   :::::
   :::::pokemon[Wailmer]
     - Echoed Voice
@@ -483,11 +496,11 @@ Optional: Pick up extra Full Heal
   :::::
   :::::pokemon[Grovyle]
     - Echoed Voice 
-    ::damage[Grovyle's Quick Attack]{source="Pikachu" offensive=false movePower=40 level=21 opponentLevel=20 opponentStat=35}
 
     ::damage[Echoed Voice vs Grovyle]{source="Pikachu" movePower=200 special=true combatStages=0 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
     ::damage[+1 Echoed Voice vs Grovyle]{source="Pikachu" movePower=200 special=true combatStages=1 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
     ::damage[+2 Echoed Voice vs Grovyle]{source="Pikachu" movePower=200 special=true combatStages=2 opponentStat=31 healthThreshold=54 otherPowerModifier=1.2 theme=error}
+    
   :::::
 
 :::::::
@@ -554,7 +567,15 @@ Don't Electroball and hope he uses electic move!
 
   :::
   :::pokemon[Voltorb]
+    :::if{source="Pikachu" condition="$outfit == 'belle'"}
+    - Icicle Crash
+    :::
+    :::if{source="Pikachu" condition="$outfit == 'popstar'"}
     - Draining Kiss (Rollout can kill, very important to use Draining Kiss!)
+    :::
+    :::if{source="Pikachu" condition="$outfit == 'Libre'"}
+    - Flying Press
+    :::
     - Rock Smash should kill
   :::
   :::pokemon[Magneton]
@@ -608,21 +629,50 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 :info[**Free heal**]{color=green}
 
+:::if{source="Pikachu" condition="$outfit == 'popstar' || $outfit == 'libre'"}
 :info[**Swap to Mudkip in front**]{color=blue}
+:::
+
+:::if{source="Pikachu" condition="$outfit == 'belle'"}
+:info[**Swap to Mudkip in front to growl if not comfortable with IC range**]{color=blue}
+:::
 
 :::::trainer[Youngster Neal]
   :::pokemon[Trapinch]
+    :::if{source="Pikachu" condition="$outfit == 'popstar'"}
     - Growl w/ Mudkip until death (try to get at least -3)
-    - X Special Attack
     - Echoed Voice x3
         ::damage[Trapinch's Bulldoze +0 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1}
         ::damage[Trapinch's Bulldoze +1 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=1}
         ::damage[Trapinch's Bulldoze +2 Def]{source="Pikachu" offensive=false movePower=60 level=23 opponentLevel=19 opponentStat=43 effectiveness=2 stab=true otherPowerModifier=1 combatStages=2}
+    :::
+
+    :::if{source="Pikachu" condition="$outfit == 'belle'"}
+    - Icicle Crash
+    ::damage[Icilce Crash vs Trapinch]{source="Pikachu" offensive=true movePower=85 level=23 opponentLevel=19 healthThreshold=46 opponentStat=22 effectiveness=2 stab=false otherPowerModifier=1}
+    :::
+
+    :::if{source="Pikachu" condition="$outfit == 'libre'"}
+    - Growl w/ Mudkip until death (try to get at least -3)
+    - Flying Press x2
+    :::
+
   :::
 
   :::pokemon[Electrike]
+    :::if{source="Pikachu" condition="$outfit == 'popstar'"}
     - Echoed Voice :info[calculate quick attack range]{color=red}
-      ::damage[Electrike's Quick Attack +2 Def]{source="Pikachu" offensive=false movePower=30 level=23 opponentLevel=19 opponentStat=22 effectiveness=1 stab=false otherPowerModifier=1 combatStages=2}
+    ::damage[Electrike's Quick Attack +2 Def]{source="Pikachu" offensive=false movePower=30 level=23 opponentLevel=19 opponentStat=22 effectiveness=1 stab=false otherPowerModifier=1 combatStages=2}
+    :::
+
+    :::if{source="Pikachu" condition="$outfit == 'belle'"}
+    - Icicle Crash x2
+    :::
+
+    :::if{source="Pikachu" condition="$outfit == 'libre'"}
+    - Flying Press x2
+    :::
+
   :::
 :::::
 
@@ -662,6 +712,11 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 > #### Sell (Top)
 > - 3 Full Heals (>>^^)
 > - Max Hyper Potions (<)
+
+:::if{source="Pikachu" condition="$outfit == 'belle'"}
+:info[**Deposit Mudkip**]{color=red}
+:::
+
 
 - Pick up backup X Defense if extra used in Trapinch fight (should have 1)
 - Repel
@@ -713,6 +768,10 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 
 :info[Optional **Defense O-Power** Best to use if you need to X Speed]{color=pink}
 
+:::if{source="Pikachu" condition="$outfit == 'popstar'"}
+- Teach Spark over Draining Kiss (slot 4)
+:::
+
 :::::::trainer[Aqua Leader Archie]
   :::::pokemon[Mightyena]{info="Heal Confusion using Persims and HP as needed" infoColor=gray}
     - X Defense (skip if you Def O-Power and can survive 2 assurance)
@@ -744,7 +803,17 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
   :::::pokemon[Sharpedo]
     - Electroball (if Sp Attk Strat otherwise Rock Smash)
     - If Snarled out of range, Rock Smash and prey
+    :::if{source="Pikachu" condition="$outfit == 'popstar'"}
     - Teach Spark over Draining Kiss (slot 4)
+    :::
+    :::if{source="Pikachu" condition="$outfit == 'belle'"}
+    - Baller Strat: Don't teach Spark
+    - Weanie Strat: Teach Spark over Icicle Crash (slot 4) and use Spark
+    :::
+    :::if{source="Pikachu" condition="$outfit == 'libre'"}
+    - Use Flying press if worried about RS range
+    - Teach Spark over Flying Press (slot 4)
+    :::
 
     ::damage[+1 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=1 theme=warning effectiveness=2}
     ::damage[+2 Electroball vs Sharpedo]{source="Pikachu" movePower=60 stab=true level=25 special=true opponentStat=26  healthThreshold=74 combatStages=2 theme=warning effectiveness=2}
@@ -755,10 +824,18 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
     ::damage[Sharpedo's Assurance]{source="Pikachu" offensive=false movePower=60 level=25 evs=6 opponentLevel=27 opponentStat=69 stab=true}
   :::::
   :::::pokemon[Golbat]{info="Faster at +1 at 34+ Speed (28+ / 12+ / 0+)" infoColor=blue}
-    - Spark (Unless you didn't get swaggered, then)
+    :::if{source="Pikachu" condition="$outfit == 'popstar'"}
+    - Spark
+    :::
+    :::if{source="Pikachu" condition="$outfit == 'belle'"}
+    - Icicle Crash or Spark
+    :::
     ::damage[+1 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=1 theme=error effectiveness=2} 
     ::damage[+2 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
     ::damage[+2 Spark vs Golbat]{source="Pikachu" movePower=65 stab=true level=26 special=false opponentStat=40  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
+    :::if{source="Pikachu" condition="$outfit == 'belle'"}
+    ::damage[+2 Icicle Crash vs Golbat]{source="Pikachu" movePower=85 stab=false level=26 special=false opponentStat=40  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
+    :::
   :::::
 :::::::
 
@@ -775,7 +852,12 @@ Go to box and pick up cutter and heal all pokes
   :::pokemon[Numel]
     - X Special Defense Pikachu
     - Heal until you get hit with 2 Overheats (lmao)
+    :::if{source="Pikachu" condition="$outfit == 'belle'"}
+    - Icicle Crash x2/3 or Echoed Voice x3
+    :::
+    :::if{source="Pikachu" condition="$outfit == 'popstar' || $outfit =='libre'"}
     - Echoed Voice until death (heal as necessary)
+    :::
     - If crit death, switch to mudkip and revive if picked up
 
     ::damage[Numel's Earth Power @ 1]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=1}
