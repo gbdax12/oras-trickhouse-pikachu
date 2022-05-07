@@ -398,7 +398,7 @@ Head to the museum.
 > #### Buy (Top)
 > - 2 X Speed
 > - 5 X Attack (v)
-> - 2 X Defense (v)
+> - 1 X Defense (v)
 > - 4 X Sp. Def (>^)
 > - 14 X Sp. Attack (^)
 > #### Buy (Bottom)
@@ -522,6 +522,10 @@ Head north to the gym.
 
 :info[**TEACH ROCK SMASH OVER THUNDER WAVE (SLOT 3)**]{color=red}
 
+:::if{source="Pikachu" condition="$outfit == 'libre'"}
+DON'T USE FLYING PRESS IN GYM UNLESS IT SAYS YOU JABRONI
+:::
+
 Puzzle (room 1): Blue switch, red switch.
 
 :::::trainer[Guitarist Kirk]
@@ -571,9 +575,9 @@ Don't Electroball and hope he uses electic move!
     - Icicle Crash
     :::
     :::if{source="Pikachu" condition="$outfit == 'popstar'"}
-    - Draining Kiss (Rollout can kill, very important to use Draining Kiss!)
+    - Draining Kiss 
     :::
-    :::if{source="Pikachu" condition="$outfit == 'Libre'"}
+    :::if{source="Pikachu" condition="$outfit == 'libre'"}
     - Flying Press
     :::
     - Rock Smash should kill
@@ -660,7 +664,7 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
   :::
 
   :::pokemon[Electrike]
-    :::if{source="Pikachu" condition="$outfit == 'popstar'"}
+    :::if{source="Pikachu" condition="($outfit == 'popstar' || $outfit == 'libre')"}
     - Echoed Voice :info[calculate quick attack range]{color=red}
     ::damage[Electrike's Quick Attack +2 Def]{source="Pikachu" offensive=false movePower=30 level=23 opponentLevel=19 opponentStat=22 effectiveness=1 stab=false otherPowerModifier=1 combatStages=2}
     :::
@@ -698,7 +702,15 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 :::trainer[Team Aqua Double]
   - Electroball x2 Grimer
+  :::if{source="Pikachu" condition="($outfit == 'popstar')"}
   - Draining Kiss Mightyena
+  :::
+  :::if{source="Pikachu" condition="($outfit == 'libre')"}
+  - Flying Press
+  :::
+  :::if{source="Pikachu" condition="($outfit == 'belle')"}
+  - Icicle Crash or Electroball if PP is ok
+  :::
   - If snarled, Rock Smash Mightyena
   - (Potion if in Aqua Jet range) :info[_Use a Super Potion if Grovyle is not your ally_]{color=red}
   - Electroball Carvanha
@@ -710,8 +722,9 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 ### Mauville Shopping
 > #### Sell (Top)
-> - 3 Full Heals (>>^^)
+> - 2 Full Heals (>>^^)
 > - Max Hyper Potions (<)
+> - Super Repel If doing backwards movement
 
 :::if{source="Pikachu" condition="$outfit == 'belle'"}
 :info[**Deposit Mudkip**]{color=red}
@@ -768,8 +781,26 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
 
 :info[Optional **Defense O-Power** Best to use if you need to X Speed]{color=pink}
 
-:::if{source="Pikachu" condition="$outfit == 'popstar'"}
-- Teach Spark over Draining Kiss (slot 4)
+:::if{source="Pikachu" condition="($outfit == 'libre' && speed=~(# / 25- / 5-) && atk=(29+ / 14+ / 1+ ))"}
+
+Optional Strat if Libre and no X Speed:
+
+Mightyena
+
+- Attack O Power (insurance for assurance get it)
+- X Defense (insurance for assurance get it)
+- Flying Press
+
+Sharpedo
+
+- Flying Press
+- Teach Spark over Flying Press
+
+Golbat
+
+- Spark
+
+Or just follow normal strats below, can't tell you what to do i'm not your mom.
 :::
 
 :::::::trainer[Aqua Leader Archie]
@@ -848,6 +879,26 @@ Go to box and pick up cutter and heal all pokes
 
 
 
+:::if{source="Pikachu" condition="spdef=(14- / x / x )"}
+**SPECIAL DEFENSE O POWER HERE INSTEAD OF FLANNERY**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(15-19 / 4- / x ) && hp=(x / 26- / x))"}
+**SPECIAL DEFENSE O POWER HERE INSTEAD OF FLANNERY**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(20-24 / 5-9 / x ) && hp=(x / 9- / x))"}
+**SPECIAL DEFENSE O POWER HERE INSTEAD OF FLANNERY**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(25+ / 10-14 / 4- ) && hp=(x / 9- / x))"}
+**SPECIAL DEFENSE O POWER HERE INSTEAD OF FLANNERY**
+:::
+
+:::if{source="Pikachu" condition="(spdef=(x / 15-19 / 5-9 ) && hp=(x / 2- / x))"}
+**SPECIAL DEFENSE O POWER HERE INSTEAD OF FLANNERY**
+:::
+
 :::::trainer[Kindler Andy]
   :::pokemon[Numel]
     - X Special Defense Pikachu
@@ -861,6 +912,7 @@ Go to box and pick up cutter and heal all pokes
     - If crit death, switch to mudkip and revive if picked up
 
     ::damage[Numel's Earth Power @ 1]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=1}
+    ::damage[Numel's Earth Power @ 2]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=2}
     ::damage[Numel's Earth Power @ 4]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=4}
     ::damage[Numel's Earth Power @ 5]{source="Pikachu" offensive=false movePower=90 level=26 opponentLevel=25 special=true opponentStat=41 stab=true effectiveness=2 combatStages=5}
   :::
