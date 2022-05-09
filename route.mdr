@@ -242,7 +242,7 @@ Head to the mart.
 ### Rustboro Shopping
 > #### Buy
 > - 2 Repels (^^)
-> - 5 Super Potions (<v)
+> - 8 Super Potions (<v)
 
 Go back through Petalburg Woods toward's Mr. Briney's house. Grass patch is last opportunity to catch zigzagoon.
 
@@ -394,15 +394,14 @@ Head to the museum.
 > - ALL Poké Balls
 > - Balm Mushroom
 > - Great Ball
-> - PP Up
 > #### Buy (Top)
 > - 2 X Speed
-> - 5 X Attack (v)
+> - 4 X Attack (v)
 > - 1 X Defense (v)
 > - 4 X Sp. Def (>^)
 > - 14 X Sp. Attack (^)
 > #### Buy (Bottom)
-> - 6 Super Repels (^^)
+> - 4 Super Repels (^^)
 
 
 Head north. Get Cosplay Pickachu
@@ -434,7 +433,7 @@ Consider reset if def <= 20 but could just x defense x2 on mightyena.
 :::
 
 Menu Before Isabel
-- Swap Marshtomp and Pikachu.
+- Swap Mudkip and Pikachu.
 - Teach Echoed Voice.
 - Equip the Silk Scarf.
 - Super Repel
@@ -507,12 +506,20 @@ So 1-2 less step (but you have to o power) but yea idk.
 
 :info[**Free heal**]{color=pink}
 
-Pickup Revive and Leppa Berry
+**Pickup Revive and Leppa Berry**
 
 Drop Repel and get+register the Mach Bike.
 
+:::if{source="Pikachu" condition="$outfit == 'belle'"}
+:info[**DEPOSIT MUDKIP IF COMFORTABLE WITH IC RANGE ON TRAPINCH!!!**]{color=red}
+
+::damage[Icilce Crash vs Trapinch]{source="Pikachu" offensive=true movePower=85 level=23 opponentLevel=19 healthThreshold=46 opponentStat=22 effectiveness=2 stab=false otherPowerModifier=1}
+
+:::
 
 Head north to the gym.
+
+
 
 :::::trainer[Wally]
   :::pokemon[Ralts]
@@ -701,21 +708,26 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 :info[**Enable Sp. Atk O-Power**]{color=pink}
 
 :::trainer[Team Aqua Double]
+
   - Electroball x2 Grimer
   :::if{source="Pikachu" condition="($outfit == 'popstar')"}
   - Draining Kiss Mightyena
   :::
+
   :::if{source="Pikachu" condition="($outfit == 'libre')"}
   - Flying Press
   :::
+
   :::if{source="Pikachu" condition="($outfit == 'belle')"}
   - Icicle Crash or Electroball if PP is ok
   :::
+  
   - If snarled, Rock Smash Mightyena
   - (Potion if in Aqua Jet range) :info[_Use a Super Potion if Grovyle is not your ally_]{color=red}
   - Electroball Carvanha
 
-  ::damage[Carvanha's Aqua Jet (estimated)]{source="Pikachu" offensive=false movePower=40 level=24 evs=0 opponentLevel=23 opponentStat=41 stab=true effectiveness=1}
+::damage[Carvanha's Aqua Jet (estimated)]{source="Pikachu" offensive=false movePower=40 level=24 evs=0 opponentLevel=23 opponentStat=41 stab=true effectiveness=1}
+
 :::
 
 **Go to Mauville** (forewards movement)
@@ -723,12 +735,9 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 ### Mauville Shopping
 > #### Sell (Top)
 > - 2 Full Heals (>>^^)
-> - Max Hyper Potions (<)
-> - Super Repel If doing backwards movement
+> - 6 Hyper Potions (<)
+> - 3 Max Repels (>>^)
 
-:::if{source="Pikachu" condition="$outfit == 'belle'"}
-:info[**Deposit Mudkip**]{color=red}
-:::
 
 
 - Pick up backup X Defense if extra used in Trapinch fight (should have 1)
