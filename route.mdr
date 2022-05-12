@@ -437,6 +437,7 @@ Menu Before Isabel
 - Teach Echoed Voice.
 - Equip the Silk Scarf.
 - Super Repel
+- Turn off exp share if havent
 
 
 :::::trainer[Poké Fan Isabel]
@@ -695,8 +696,8 @@ wilton will not use fakeout if in kill range - so use that to your advantage to 
 
 :::::trainer[Poké Maniac Steve]{info="Cancel repel after fight." infoColor=gray}
   :::pokemon[Aron]{info="Consider Electroball x2 if minus attack nature" infoColor=blue}
-    - Rock Smash
-    - If Yellow, Rock Smash, otherwise Electroball
+    - Electro Ball (or Rocksmash x2 if x / 31 / 20+ )
+    - Rock Smash 
   :::
 :::::
 
@@ -767,6 +768,7 @@ Enter the cable car building (watch out for the spinner in front!) and talk to t
   :::
 :::::
 
+If damaged, **HEAL TO FULL**
 
 :info[**Enable Sp. Atk O-Power**]{color=pink}
 
