@@ -528,7 +528,7 @@ Head north to the gym.
   :::
 :::::
 
-:info[**Wait till before Wattson to teach Rock Smash over Thundershock (SLOT 3)**]{color=red}
+:info[**Wait till before Wattson to teach Rock Smash over Thunderwave (SLOT 3)**]{color=red}
 
 :::if{source="Pikachu" condition="$outfit == 'libre'"}
 DON'T USE FLYING PRESS IN GYM UNLESS IT SAYS YOU JABRONI
@@ -565,7 +565,7 @@ Don't Electroball and hope he uses electic move!
 :::::
 
 - **Equip Lum Berry**
-- **TEACH ROCK SMASH OVER THUNDERSHOCK (SLOT 3)
+- **TEACH ROCK SMASH OVER THUNDERWAVE (SLOT 3)
 :::::trainer[Leader Wattson]
   :::pokemon[Magnemite]
     - X-Attack x3
@@ -871,7 +871,7 @@ Or just follow normal strats below, can't tell you what to do i'm not your mom.
     :::if{source="Pikachu" condition="$outfit == 'belle'"}
     - Icicle Crash or Spark
     :::
-    ::damage[+1 Electroball vs Golbat]{source="Pikachumar" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=1 theme=error effectiveness=2} 
+    ::damage[+1 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=1 theme=error effectiveness=2} 
     ::damage[+2 Electroball vs Golbat]{source="Pikachu" movePower=60 stab=true level=26 special=true opponentStat=42  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
     ::damage[+2 Spark vs Golbat]{source="Pikachu" movePower=65 stab=true level=26 special=false opponentStat=40  healthThreshold=72 combatStages=2 theme=error effectiveness=2}
     :::if{source="Pikachu" condition="$outfit == 'belle'"}
@@ -911,7 +911,7 @@ Go to box and pick up cutter and heal all pokes
 
 :::::trainer[Kindler Andy]
   :::pokemon[Numel]
-    - X Special Defense Pikachumarmar
+    - X Special Defense Pikachu
     - Heal until you get hit with 2 Overheats (lmao)
     :::if{source="Pikachu" condition="$outfit == 'belle'"}
     - Icicle Crash x2/3 or Echoed Voice x3
@@ -971,7 +971,7 @@ Go to box and pick up cutter and heal all pokes
     ::damage[160 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=160 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2}    
     ::damage[160 Echoed Voice +3 vs Numel]{source="Pikachu" movePower=160 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 otherPowerModifier=1.2}  
     ::damage[200 Echoed Voice +2 vs Numel]{source="Pikachu" movePower=200 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 otherPowerModifier=1.2}  
-marmar
+
     :::if{source="Pikachu" condition="speed=(x / x / 16+)"}
       ::damage[Electro Ball +2 vs Numel]{source="Pikachu" movePower=150 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=2 theme=error effectiveness=1 stab=true}  
       ::damage[Electro Ball +3 vs Numel]{source="Pikachu" movePower=150 level=27 special=true opponentStat=44  healthThreshold=77 combatStages=3 theme=error effectiveness=1 stab=true}  
