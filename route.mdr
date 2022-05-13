@@ -514,7 +514,7 @@ Drop Repel and get+register the Mach Bike.
 :::if{source="Pikachu" condition="$outfit == 'belle'"}
 :info[**DEPOSIT MUDKIP IF COMFORTABLE WITH IC RANGE ON TRAPINCH!!!**]{color=red}
 
-::damage[Icilce Crash vs Trapinch]{source="Pikachu" offensive=true movePower=85 level=23 opponentLevel=19 healthThreshold=46 opponentStat=22 effectiveness=2 stab=false otherPowerModifier=1}
+::damage[Icicle Crash vs Trapinch]{source="Pikachu" offensive=true movePower=85 level=23 opponentLevel=19 healthThreshold=46 opponentStat=22 effectiveness=2 stab=false otherPowerModifier=1}
 
 :::
 
@@ -528,7 +528,7 @@ Head north to the gym.
   :::
 :::::
 
-:info[**TEACH ROCK SMASH OVER THUNDER WAVE (SLOT 3)**]{color=red}
+:info[**Wait till before Wattson to teach Rock Smash over Thundershock (SLOT 3)**]{color=red}
 
 :::if{source="Pikachu" condition="$outfit == 'libre'"}
 DON'T USE FLYING PRESS IN GYM UNLESS IT SAYS YOU JABRONI
@@ -539,10 +539,9 @@ Puzzle (room 1): Blue switch, red switch.
 :::::trainer[Guitarist Kirk]
   :::pokemon[Magnemite]
      - Echoed Voice x3
-     - Rock Smash x2 (If x / 29+ / 14+ )
   :::
   :::pokemon[Electrike]
-    - Echoed Voice (x2-3)
+    - Echoed Voice (x2)
   :::
 :::::
 
@@ -565,8 +564,8 @@ Don't Electroball and hope he uses electic move!
   :::
 :::::
 
-**Equip Lum Berry**
-
+- **Equip Lum Berry**
+- **TEACH ROCK SMASH OVER THUNDERSHOCK (SLOT 3)
 :::::trainer[Leader Wattson]
   :::pokemon[Magnemite]
     - X-Attack x3
