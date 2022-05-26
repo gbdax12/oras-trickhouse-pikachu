@@ -913,6 +913,7 @@ Go to box and pick up cutter and heal all pokes
   :::pokemon[Numel]
     - X Special Defense Pikachu
     - Heal until you get hit with 2 Overheats (lmao)
+    - try not to die of Earth Power Crit (or cringe)
     :::if{source="Pikachu" condition="$outfit == 'belle'"}
     - Icicle Crash x2/3 or Echoed Voice x3
     :::
